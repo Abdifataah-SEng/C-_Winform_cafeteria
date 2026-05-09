@@ -51,7 +51,6 @@
             this.monthlysalaryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.employeesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.cafeteria_management_C_DBDataSet = new SS_Assment_Cafateria_C_.Cafeteria_management_C_DBDataSet();
-            this.employeesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.employeesTableAdapter = new SS_Assment_Cafateria_C_.Cafeteria_management_C_DBDataSetTableAdapters.employeesTableAdapter();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -59,7 +58,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeesBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cafeteria_management_C_DBDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.employeesBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -114,6 +112,7 @@
             this.button2.Size = new System.Drawing.Size(55, 46);
             this.button2.TabIndex = 11;
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -159,8 +158,6 @@
             // 
             // dataGridView1
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeight = 26;
@@ -178,7 +175,6 @@
             this.dataGridView1.DataSource = this.employeesBindingSource1;
             this.dataGridView1.Location = new System.Drawing.Point(12, 115);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 47;
             this.dataGridView1.Size = new System.Drawing.Size(953, 575);
             this.dataGridView1.TabIndex = 0;
@@ -189,7 +185,6 @@
             this.employeeidDataGridViewTextBoxColumn.HeaderText = "employee_id";
             this.employeeidDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.employeeidDataGridViewTextBoxColumn.Name = "employeeidDataGridViewTextBoxColumn";
-            this.employeeidDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // userloginidDataGridViewTextBoxColumn
             // 
@@ -197,7 +192,6 @@
             this.userloginidDataGridViewTextBoxColumn.HeaderText = "userlogin_id";
             this.userloginidDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.userloginidDataGridViewTextBoxColumn.Name = "userloginidDataGridViewTextBoxColumn";
-            this.userloginidDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // firstnameDataGridViewTextBoxColumn
             // 
@@ -205,7 +199,6 @@
             this.firstnameDataGridViewTextBoxColumn.HeaderText = "first_name";
             this.firstnameDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.firstnameDataGridViewTextBoxColumn.Name = "firstnameDataGridViewTextBoxColumn";
-            this.firstnameDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // lastnameDataGridViewTextBoxColumn
             // 
@@ -213,7 +206,6 @@
             this.lastnameDataGridViewTextBoxColumn.HeaderText = "last_name";
             this.lastnameDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.lastnameDataGridViewTextBoxColumn.Name = "lastnameDataGridViewTextBoxColumn";
-            this.lastnameDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // positionDataGridViewTextBoxColumn
             // 
@@ -221,7 +213,6 @@
             this.positionDataGridViewTextBoxColumn.HeaderText = "position";
             this.positionDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.positionDataGridViewTextBoxColumn.Name = "positionDataGridViewTextBoxColumn";
-            this.positionDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // hiredateDataGridViewTextBoxColumn
             // 
@@ -229,7 +220,6 @@
             this.hiredateDataGridViewTextBoxColumn.HeaderText = "hire_date";
             this.hiredateDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.hiredateDataGridViewTextBoxColumn.Name = "hiredateDataGridViewTextBoxColumn";
-            this.hiredateDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // emailDataGridViewTextBoxColumn
             // 
@@ -237,7 +227,6 @@
             this.emailDataGridViewTextBoxColumn.HeaderText = "email";
             this.emailDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
-            this.emailDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // phoneDataGridViewTextBoxColumn
             // 
@@ -245,7 +234,6 @@
             this.phoneDataGridViewTextBoxColumn.HeaderText = "phone";
             this.phoneDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.phoneDataGridViewTextBoxColumn.Name = "phoneDataGridViewTextBoxColumn";
-            this.phoneDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // hourlyrateDataGridViewTextBoxColumn
             // 
@@ -253,7 +241,6 @@
             this.hourlyrateDataGridViewTextBoxColumn.HeaderText = "hourly_rate";
             this.hourlyrateDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.hourlyrateDataGridViewTextBoxColumn.Name = "hourlyrateDataGridViewTextBoxColumn";
-            this.hourlyrateDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // monthlysalaryDataGridViewTextBoxColumn
             // 
@@ -261,7 +248,6 @@
             this.monthlysalaryDataGridViewTextBoxColumn.HeaderText = "monthly_salary";
             this.monthlysalaryDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.monthlysalaryDataGridViewTextBoxColumn.Name = "monthlysalaryDataGridViewTextBoxColumn";
-            this.monthlysalaryDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // employeesBindingSource1
             // 
@@ -272,10 +258,6 @@
             // 
             this.cafeteria_management_C_DBDataSet.DataSetName = "Cafeteria_management_C_DBDataSet";
             this.cafeteria_management_C_DBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // employeesBindingSource
-            // 
-            this.employeesBindingSource.DataMember = "Employees";
             // 
             // employeesTableAdapter
             // 
@@ -295,7 +277,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeesBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cafeteria_management_C_DBDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.employeesBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -309,7 +290,6 @@
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
         private System.Windows.Forms.TextBox txtfilter;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.BindingSource employeesBindingSource;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;

@@ -16,5 +16,12 @@ namespace SS_Assment_Cafateria_C_
         {
             InitializeComponent();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            payment py = new payment();
+            py.Show();
+
+        }
     }
 }

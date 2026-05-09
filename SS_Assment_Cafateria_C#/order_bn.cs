@@ -50,7 +50,7 @@ namespace SS_Assment_Cafateria_C_
                 if (con.State != ConnectionState.Open)
                 {
                     con.Open();
-                    SqlCommand cmd = new SqlCommand("DELETE FROM order_bn WHERE order_id = @order_id", con);
+                    SqlCommand cmd = new SqlCommand("DELETE FROM Orderall WHERE order_id = @order_id", con);
                     cmd.Parameters.AddWithValue("@order_id", txtorder_id.Text);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("delete seccessfuly");
@@ -81,7 +81,7 @@ namespace SS_Assment_Cafateria_C_
                 if (con.State != ConnectionState.Open)
                 {
                     con.Open();
-                    SqlCommand cmd = new SqlCommand("Insert into Orderall(employee_id, order_date, notes, item_name, category, item_price, quantity, unit_price, total_amount) VALUES (, @employee_id, @order_date, @notes, @item_name, @category, @item_price, @quantity, @unit_price, @total_amount)", con);
+                    SqlCommand cmd = new SqlCommand("Insert into Orderall(employee_id, order_date, notes, item_name, category, item_price, quantity, unit_price, total_amount) VALUES ( @employee_id, @order_date, @notes, @item_name, @category, @item_price, @quantity, @unit_price, @total_amount)", con);
                     
                     cmd.Parameters.AddWithValue("@employee_id", txtemployee_id.Text);
                     cmd.Parameters.AddWithValue("@order_date", btorder_date.Value);
@@ -117,8 +117,16 @@ namespace SS_Assment_Cafateria_C_
                 if(con.State != ConnectionState.Open)
                 {
                     con.Open();
-                    SqlCommand cmd = new SqlCommand("UPDATE Orderall SET employee_id = @employee_id, order_date = @order_date, notes = @notes, item_name = @item_name, category = @category, item_price = @item_price, quantity = @quantity, unit_price = @unit_price, subtotal = @subtotal, total_amount = @total_amount WHERE order_id = @order_id", con);
-                    
+                    SqlCommand cmd = new SqlCommand("UPDATE Orderall SET employee_id = @employee_id, order_date = @order_date, notes = @notes, item_name = @item_name, category = @category, item_price = @item_price, quantity = @quantity, unit_price = @unit_price,  total_amount = @total_amount WHERE order_id = @order_id", con);
+                    cmd.Parameters.AddWithValue("@employee_id", txtemployee_id.Text);
+                    cmd.Parameters.AddWithValue("@order_date", btorder_date.Value);
+                    cmd.Parameters.AddWithValue("@notes", richTextBox1.Text);
+                    cmd.Parameters.AddWithValue("@item_name", txtitem_name.Text);
+                    cmd.Parameters.AddWithValue("@category", txtcategory.Text);
+                    cmd.Parameters.AddWithValue("@item_price", txtitem_price.Text);
+                    cmd.Parameters.AddWithValue("@quantity", txtquantity.Text);
+                    cmd.Parameters.AddWithValue("@unit_price", txtunitprice.Text);
+                    cmd.Parameters.AddWithValue("@total_amount", txttotalamount.Text);
                     cmd.ExecuteNonQuery();
                     clear();
                     MessageBox.Show("delete seccessfuly");
@@ -174,6 +182,47 @@ namespace SS_Assment_Cafateria_C_
         private void txtsubtatol_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void guna2GradientTileButton4_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (con.State != ConnectionState.Open)
+                    con.Open();
+                SqlCommand cmd = new SqlCommand(" select * from Orderall where  order_id=@order_id", con);
+
+                cmd.Parameters.AddWithValue("@order_id", txtorder_id.Text);
+                SqlDataReader dr = cmd.ExecuteReader();
+                if (dr.Read())
+                {
+
+                    txtitem_name.Text = dr["item_name"].ToString();
+                    txtcategory.Text = dr["category"].ToString();
+                    txtitem_price.Text = dr["item_price"].ToString();
+                    txtquantity.Text = dr["quantity"].ToString();
+                    txtunitprice.Text = dr["unit_price"].ToString();
+                    txttotalamount.Text = dr["total_amount"].ToString();
+                    richTextBox1.Text = dr["notes"].ToString();
+                    txtemployee_id.Text = dr["employee_id"].ToString();
+                    txtsubtatol.Text = dr["total_amount"].ToString();
+                    
+                }
+
+                else
+                    MessageBox.Show("no match found");
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+
+            finally
+            {
+                con.Close();
+            }
         }
     }
 }

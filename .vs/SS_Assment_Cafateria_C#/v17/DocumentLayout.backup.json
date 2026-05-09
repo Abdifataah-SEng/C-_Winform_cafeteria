@@ -3,36 +3,60 @@
   "WorkspaceRootPath": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|c:\\users\\pc\\source\\repos\\ss_assment_cafateria_c#\\ss_assment_cafateria_c#\\uc_order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|solutionrelative:ss_assment_cafateria_c#\\uc_order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\ss_assment_cafateria_c#\\uc_order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|solutionrelative:ss_assment_cafateria_c#\\uc_order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\ss_assment_cafateria_c#\\order_bn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|solutionrelative:ss_assment_cafateria_c#\\order_bn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\ss_assment_cafateria_c#\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|solutionrelative:ss_assment_cafateria_c#\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|c:\\users\\pc\\source\\repos\\ss_assment_cafateria_c#\\ss_assment_cafateria_c#\\order_bn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|solutionrelative:ss_assment_cafateria_c#\\order_bn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|c:\\users\\pc\\source\\repos\\ss_assment_cafateria_c#\\ss_assment_cafateria_c#\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\ss_assment_cafateria_c#\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|solutionrelative:ss_assment_cafateria_c#\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\ss_assment_cafateria_c#\\order_bn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|solutionrelative:ss_assment_cafateria_c#\\order_bn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\ss_assment_cafateria_c#\\uc_order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|solutionrelative:ss_assment_cafateria_c#\\uc_order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\ss_assment_cafateria_c#\\uc_payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|solutionrelative:ss_assment_cafateria_c#\\uc_payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|c:\\users\\pc\\source\\repos\\ss_assment_cafateria_c#\\ss_assment_cafateria_c#\\uc_payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|solutionrelative:ss_assment_cafateria_c#\\uc_payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\ss_assment_cafateria_c#\\dashbourd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|solutionrelative:ss_assment_cafateria_c#\\dashbourd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\ss_assment_cafateria_c#\\uc_order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|solutionrelative:ss_assment_cafateria_c#\\uc_order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\ss_assment_cafateria_c#\\salary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|solutionrelative:ss_assment_cafateria_c#\\salary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\ss_assment_cafateria_c#\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|solutionrelative:ss_assment_cafateria_c#\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\ss_assment_cafateria_c#\\forgot_pass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|solutionrelative:ss_assment_cafateria_c#\\forgot_pass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\ss_assment_cafateria_c#\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|solutionrelative:ss_assment_cafateria_c#\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\ss_assment_cafateria_c#\\dashbourd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|solutionrelative:ss_assment_cafateria_c#\\dashbourd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\ss_assment_cafateria_c#\\dashbourd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|solutionrelative:ss_assment_cafateria_c#\\dashbourd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\ss_assment_cafateria_c#\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|solutionrelative:ss_assment_cafateria_c#\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\ss_assment_cafateria_c#\\uc_salary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -43,44 +67,32 @@
       "RelativeMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|solutionrelative:ss_assment_cafateria_c#\\uc_employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\ss_assment_cafateria_c#\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|solutionrelative:ss_assment_cafateria_c#\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\ss_assment_cafateria_c#\\uc_payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|solutionrelative:ss_assment_cafateria_c#\\uc_payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\ss_assment_cafateria_c#\\salary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|solutionrelative:ss_assment_cafateria_c#\\salary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\ss_assment_cafateria_c#\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|solutionrelative:ss_assment_cafateria_c#\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\ss_assment_cafateria_c#\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|solutionrelative:ss_assment_cafateria_c#\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\ss_assment_cafateria_c#\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|solutionrelative:ss_assment_cafateria_c#\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\ss_assment_cafateria_c#\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|solutionrelative:ss_assment_cafateria_c#\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\ss_assment_cafateria_c#\\forgot_pass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|solutionrelative:ss_assment_cafateria_c#\\forgot_pass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\ss_assment_cafateria_c#\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|solutionrelative:ss_assment_cafateria_c#\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\ss_assment_cafateria_c#\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|solutionrelative:ss_assment_cafateria_c#\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\ss_assment_cafateria_c#\\uc_employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|solutionrelative:ss_assment_cafateria_c#\\uc_employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\ss_assment_cafateria_c#\\salary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|solutionrelative:ss_assment_cafateria_c#\\salary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\ss_assment_cafateria_c#\\forgot_pass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|solutionrelative:ss_assment_cafateria_c#\\forgot_pass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\ss_assment_cafateria_c#\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|solutionrelative:ss_assment_cafateria_c#\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\ss_assment_cafateria_c#\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|solutionrelative:ss_assment_cafateria_c#\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F99C6F61-2A6D-4C36-8AF1-8104F06ED71F}|SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#.csproj|C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\ss_assment_cafateria_c#\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -114,106 +126,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 7,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UC_order.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\UC_order.cs",
-              "RelativeDocumentMoniker": "SS_Assment_Cafateria_C#\\UC_order.cs",
-              "ToolTip": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\UC_order.cs [Design]",
-              "RelativeToolTip": "SS_Assment_Cafateria_C#\\UC_order.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-05T14:44:58.583Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "order_bn.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\order_bn.cs",
-              "RelativeDocumentMoniker": "SS_Assment_Cafateria_C#\\order_bn.cs",
-              "ToolTip": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\order_bn.cs [Design]",
-              "RelativeToolTip": "SS_Assment_Cafateria_C#\\order_bn.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-05T15:09:13.691Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "login.cs",
-              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\login.cs",
-              "RelativeDocumentMoniker": "SS_Assment_Cafateria_C#\\login.cs",
-              "ToolTip": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\login.cs",
-              "RelativeToolTip": "SS_Assment_Cafateria_C#\\login.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAwwDIAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-08T07:11:06.421Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UC_order.cs",
-              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\UC_order.cs",
-              "RelativeDocumentMoniker": "SS_Assment_Cafateria_C#\\UC_order.cs",
-              "ToolTip": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\UC_order.cs",
-              "RelativeToolTip": "SS_Assment_Cafateria_C#\\UC_order.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAowB4AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-08T06:58:27.717Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "order_bn.cs",
-              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\order_bn.cs",
-              "RelativeDocumentMoniker": "SS_Assment_Cafateria_C#\\order_bn.cs",
-              "ToolTip": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\order_bn.cs",
-              "RelativeToolTip": "SS_Assment_Cafateria_C#\\order_bn.cs",
-              "ViewState": "AgIAAKMAAAAAAAAAAAAMwK8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-06T05:33:36.286Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UC_employee.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\UC_employee.cs",
-              "RelativeDocumentMoniker": "SS_Assment_Cafateria_C#\\UC_employee.cs",
-              "ToolTip": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\UC_employee.cs [Design]",
-              "RelativeToolTip": "SS_Assment_Cafateria_C#\\UC_employee.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-05T06:27:29.823Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "UC_payment.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\UC_payment.cs",
-              "RelativeDocumentMoniker": "SS_Assment_Cafateria_C#\\UC_payment.cs",
-              "ToolTip": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\UC_payment.cs [Design]",
-              "RelativeToolTip": "SS_Assment_Cafateria_C#\\UC_payment.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-05T04:19:38.695Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UC_salary.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\UC_salary.cs",
-              "RelativeDocumentMoniker": "SS_Assment_Cafateria_C#\\UC_salary.cs",
-              "ToolTip": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\UC_salary.cs [Design]",
-              "RelativeToolTip": "SS_Assment_Cafateria_C#\\UC_salary.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-05T11:24:34.048Z"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 7,
@@ -224,105 +138,208 @@
               "RelativeToolTip": "SS_Assment_Cafateria_C#\\Dashbourd.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-04T07:46:32.921Z",
+              "IsPinned": true,
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\Form1.cs",
-              "RelativeDocumentMoniker": "SS_Assment_Cafateria_C#\\Form1.cs",
-              "ToolTip": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\Form1.cs [Design]",
-              "RelativeToolTip": "SS_Assment_Cafateria_C#\\Form1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-03T07:13:27.993Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "forgot_pass.cs",
-              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\forgot_pass.cs",
-              "RelativeDocumentMoniker": "SS_Assment_Cafateria_C#\\forgot_pass.cs",
-              "ToolTip": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\forgot_pass.cs",
-              "RelativeToolTip": "SS_Assment_Cafateria_C#\\forgot_pass.cs",
-              "ViewState": "AgIAAFgAAAAAAAAAAAAwwGcAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-04T07:44:35.69Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Dashbourd.cs",
-              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\Dashbourd.cs",
-              "RelativeDocumentMoniker": "SS_Assment_Cafateria_C#\\Dashbourd.cs",
-              "ToolTip": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\Dashbourd.cs",
-              "RelativeToolTip": "SS_Assment_Cafateria_C#\\Dashbourd.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAA5wA0AAABJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-06T05:20:07.261Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Salary.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\Salary.cs",
-              "RelativeDocumentMoniker": "SS_Assment_Cafateria_C#\\Salary.cs",
-              "ToolTip": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\Salary.cs [Design]",
-              "RelativeToolTip": "SS_Assment_Cafateria_C#\\Salary.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-05T11:29:08.016Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 2,
               "Title": "payment.cs [Design]",
               "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\payment.cs",
               "RelativeDocumentMoniker": "SS_Assment_Cafateria_C#\\payment.cs",
               "ToolTip": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\payment.cs [Design]",
               "RelativeToolTip": "SS_Assment_Cafateria_C#\\payment.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-05T11:39:33.445Z"
+              "WhenOpened": "2026-05-05T11:39:33.445Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Order.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\Order.cs",
-              "RelativeDocumentMoniker": "SS_Assment_Cafateria_C#\\Order.cs",
-              "ToolTip": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\Order.cs [Design]",
-              "RelativeToolTip": "SS_Assment_Cafateria_C#\\Order.cs [Design]",
+              "DocumentIndex": 5,
+              "Title": "UC_payment.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\UC_payment.cs",
+              "RelativeDocumentMoniker": "SS_Assment_Cafateria_C#\\UC_payment.cs",
+              "ToolTip": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\UC_payment.cs [Design]",
+              "RelativeToolTip": "SS_Assment_Cafateria_C#\\UC_payment.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-05T15:09:10.646Z"
+              "WhenOpened": "2026-05-05T04:19:38.695Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 3,
+              "Title": "order_bn.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\order_bn.cs",
+              "RelativeDocumentMoniker": "SS_Assment_Cafateria_C#\\order_bn.cs",
+              "ToolTip": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\order_bn.cs [Design]",
+              "RelativeToolTip": "SS_Assment_Cafateria_C#\\order_bn.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T15:09:13.691Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UC_order.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\UC_order.cs",
+              "RelativeDocumentMoniker": "SS_Assment_Cafateria_C#\\UC_order.cs",
+              "ToolTip": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\UC_order.cs [Design]",
+              "RelativeToolTip": "SS_Assment_Cafateria_C#\\UC_order.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T14:44:58.583Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UC_payment.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\UC_payment.cs",
+              "RelativeDocumentMoniker": "SS_Assment_Cafateria_C#\\UC_payment.cs",
+              "ToolTip": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\UC_payment.cs",
+              "RelativeToolTip": "SS_Assment_Cafateria_C#\\UC_payment.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAewBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-09T14:05:34.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "order_bn.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\order_bn.cs",
+              "RelativeDocumentMoniker": "SS_Assment_Cafateria_C#\\order_bn.cs",
+              "ToolTip": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\order_bn.cs",
+              "RelativeToolTip": "SS_Assment_Cafateria_C#\\order_bn.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAMwE4AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-06T05:33:36.286Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "payment.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\payment.cs",
+              "RelativeDocumentMoniker": "SS_Assment_Cafateria_C#\\payment.cs",
+              "ToolTip": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\payment.cs",
+              "RelativeToolTip": "SS_Assment_Cafateria_C#\\payment.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAD4v2cAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T11:39:11.166Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Dashbourd.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\Dashbourd.cs",
+              "RelativeDocumentMoniker": "SS_Assment_Cafateria_C#\\Dashbourd.cs",
+              "ToolTip": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\Dashbourd.cs",
+              "RelativeToolTip": "SS_Assment_Cafateria_C#\\Dashbourd.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAcwDIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-06T05:20:07.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UC_order.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\UC_order.cs",
+              "RelativeDocumentMoniker": "SS_Assment_Cafateria_C#\\UC_order.cs",
+              "ToolTip": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\UC_order.cs",
+              "RelativeToolTip": "SS_Assment_Cafateria_C#\\UC_order.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAD4vxYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T06:58:27.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\Program.cs",
+              "RelativeDocumentMoniker": "SS_Assment_Cafateria_C#\\Program.cs",
+              "ToolTip": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\Program.cs",
+              "RelativeToolTip": "SS_Assment_Cafateria_C#\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-09T11:39:42.854Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "login.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\login.cs",
+              "RelativeDocumentMoniker": "SS_Assment_Cafateria_C#\\login.cs",
+              "ToolTip": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\login.cs",
+              "RelativeToolTip": "SS_Assment_Cafateria_C#\\login.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAA4wCoAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T07:11:06.421Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Salary.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\Salary.cs",
+              "RelativeDocumentMoniker": "SS_Assment_Cafateria_C#\\Salary.cs",
+              "ToolTip": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\Salary.cs [Design]",
+              "RelativeToolTip": "SS_Assment_Cafateria_C#\\Salary.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T11:29:08.016Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "login.cs [Design]",
               "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\login.cs",
               "RelativeDocumentMoniker": "SS_Assment_Cafateria_C#\\login.cs",
               "ToolTip": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\login.cs [Design]",
               "RelativeToolTip": "SS_Assment_Cafateria_C#\\login.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-03T07:26:58.322Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-05-03T07:26:58.322Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 15,
+              "Title": "UC_employee.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\UC_employee.cs",
+              "RelativeDocumentMoniker": "SS_Assment_Cafateria_C#\\UC_employee.cs",
+              "ToolTip": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\UC_employee.cs [Design]",
+              "RelativeToolTip": "SS_Assment_Cafateria_C#\\UC_employee.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T06:27:29.823Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "UC_employee.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\UC_employee.cs",
+              "RelativeDocumentMoniker": "SS_Assment_Cafateria_C#\\UC_employee.cs",
+              "ToolTip": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\UC_employee.cs",
+              "RelativeToolTip": "SS_Assment_Cafateria_C#\\UC_employee.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAmwBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-09T11:33:37.347Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "forgot_pass.cs [Design]",
               "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\forgot_pass.cs",
               "RelativeDocumentMoniker": "SS_Assment_Cafateria_C#\\forgot_pass.cs",
               "ToolTip": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\forgot_pass.cs [Design]",
               "RelativeToolTip": "SS_Assment_Cafateria_C#\\forgot_pass.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-04T07:41:00.548Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-05-04T07:41:00.548Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 16,
               "Title": "employee.cs [Design]",
               "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\employee.cs",
               "RelativeDocumentMoniker": "SS_Assment_Cafateria_C#\\employee.cs",
@@ -333,15 +350,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "payment.cs",
-              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\payment.cs",
-              "RelativeDocumentMoniker": "SS_Assment_Cafateria_C#\\payment.cs",
-              "ToolTip": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\payment.cs",
-              "RelativeToolTip": "SS_Assment_Cafateria_C#\\payment.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAewBUAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 14,
+              "Title": "UC_salary.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\UC_salary.cs",
+              "RelativeDocumentMoniker": "SS_Assment_Cafateria_C#\\UC_salary.cs",
+              "ToolTip": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\UC_salary.cs [Design]",
+              "RelativeToolTip": "SS_Assment_Cafateria_C#\\UC_salary.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-05T11:39:11.166Z"
+              "WhenOpened": "2026-05-05T11:24:34.048Z"
             },
             {
               "$type": "Document",
@@ -351,13 +367,48 @@
               "RelativeDocumentMoniker": "SS_Assment_Cafateria_C#\\Salary.cs",
               "ToolTip": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\Salary.cs",
               "RelativeToolTip": "SS_Assment_Cafateria_C#\\Salary.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAD4vxUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAqwCYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-05T11:34:09.332Z"
+              "WhenOpened": "2026-05-05T11:34:09.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\Form1.cs",
+              "RelativeDocumentMoniker": "SS_Assment_Cafateria_C#\\Form1.cs",
+              "ToolTip": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\Form1.cs [Design]",
+              "RelativeToolTip": "SS_Assment_Cafateria_C#\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T07:13:27.993Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 20,
+              "Title": "forgot_pass.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\forgot_pass.cs",
+              "RelativeDocumentMoniker": "SS_Assment_Cafateria_C#\\forgot_pass.cs",
+              "ToolTip": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\forgot_pass.cs",
+              "RelativeToolTip": "SS_Assment_Cafateria_C#\\forgot_pass.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAwwGcAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T07:44:35.69Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Order.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\Order.cs",
+              "RelativeDocumentMoniker": "SS_Assment_Cafateria_C#\\Order.cs",
+              "ToolTip": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\Order.cs [Design]",
+              "RelativeToolTip": "SS_Assment_Cafateria_C#\\Order.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T15:09:10.646Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
               "Title": "employee.cs",
               "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\employee.cs",
               "RelativeDocumentMoniker": "SS_Assment_Cafateria_C#\\employee.cs",
@@ -369,7 +420,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "Order.cs",
               "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\Order.cs",
               "RelativeDocumentMoniker": "SS_Assment_Cafateria_C#\\Order.cs",
@@ -381,7 +432,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 27,
               "Title": "DashUser.cs",
               "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\DashUser.cs",
               "RelativeDocumentMoniker": "SS_Assment_Cafateria_C#\\DashUser.cs",
@@ -393,19 +444,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 26,
               "Title": "login.resx",
               "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\login.resx",
               "RelativeDocumentMoniker": "SS_Assment_Cafateria_C#\\login.resx",
               "ToolTip": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\login.resx",
               "RelativeToolTip": "SS_Assment_Cafateria_C#\\login.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2026-05-05T04:11:32.904Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-05T04:11:32.904Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 25,
               "Title": "login.Designer.cs",
               "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\login.Designer.cs",
               "RelativeDocumentMoniker": "SS_Assment_Cafateria_C#\\login.Designer.cs",
@@ -413,12 +463,11 @@
               "RelativeToolTip": "SS_Assment_Cafateria_C#\\login.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-05T04:11:32.925Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-05T04:11:32.925Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 28,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\SS_Assment_Cafateria_C#\\SS_Assment_Cafateria_C#\\Form1.cs",
               "RelativeDocumentMoniker": "SS_Assment_Cafateria_C#\\Form1.cs",

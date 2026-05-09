@@ -16,5 +16,10 @@ namespace SS_Assment_Cafateria_C_
         {
             InitializeComponent();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

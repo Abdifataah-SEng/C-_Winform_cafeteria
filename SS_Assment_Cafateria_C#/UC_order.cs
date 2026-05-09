@@ -30,5 +30,10 @@ namespace SS_Assment_Cafateria_C_
         {
             
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.orderallTableAdapter.Fill(this.cafeteria_management_C_DBDataSet.Orderall);
+        }
     }
 }

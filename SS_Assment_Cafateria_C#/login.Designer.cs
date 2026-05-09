@@ -32,13 +32,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.txtname = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtpass = new Guna.UI2.WinForms.Guna2TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2GradientTileButton1 = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.txtpass = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -104,26 +104,6 @@
             this.txtname.SelectedText = "";
             this.txtname.Size = new System.Drawing.Size(281, 51);
             this.txtname.TabIndex = 22;
-            // 
-            // txtpass
-            // 
-            this.txtpass.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtpass.DefaultText = "";
-            this.txtpass.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtpass.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtpass.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtpass.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtpass.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtpass.Font = new System.Drawing.Font("Cambria", 15.70909F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtpass.ForeColor = System.Drawing.Color.Black;
-            this.txtpass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtpass.Location = new System.Drawing.Point(428, 297);
-            this.txtpass.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtpass.Name = "txtpass";
-            this.txtpass.PlaceholderText = "";
-            this.txtpass.SelectedText = "";
-            this.txtpass.Size = new System.Drawing.Size(281, 51);
-            this.txtpass.TabIndex = 22;
             // 
             // pictureBox3
             // 
@@ -203,15 +183,35 @@
             this.guna2ControlBox1.TabIndex = 24;
             this.guna2ControlBox1.Click += new System.EventHandler(this.guna2ControlBox1_Click);
             // 
+            // txtpass
+            // 
+            this.txtpass.Animated = true;
+            this.txtpass.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtpass.DefaultText = "";
+            this.txtpass.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtpass.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtpass.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtpass.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtpass.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtpass.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtpass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtpass.Location = new System.Drawing.Point(432, 297);
+            this.txtpass.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtpass.Name = "txtpass";
+            this.txtpass.PlaceholderText = "";
+            this.txtpass.SelectedText = "";
+            this.txtpass.Size = new System.Drawing.Size(276, 51);
+            this.txtpass.TabIndex = 25;
+            // 
             // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.ClientSize = new System.Drawing.Size(794, 546);
+            this.Controls.Add(this.txtpass);
             this.Controls.Add(this.guna2ControlBox1);
             this.Controls.Add(this.guna2GradientTileButton1);
-            this.Controls.Add(this.txtpass);
             this.Controls.Add(this.txtname);
             this.Controls.Add(this.UseSystemPasswordChar);
             this.Controls.Add(this.pictureBox3);
@@ -243,8 +243,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private Guna.UI2.WinForms.Guna2TextBox txtname;
-        private Guna.UI2.WinForms.Guna2TextBox txtpass;
         private Guna.UI2.WinForms.Guna2GradientTileButton guna2GradientTileButton1;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
+        private Guna.UI2.WinForms.Guna2TextBox txtpass;
     }
 }

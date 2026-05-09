@@ -38,13 +38,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.cafeteria_management_C_DBDataSet3 = new SS_Assment_Cafateria_C_.Cafeteria_management_C_DBDataSet3();
-            this.cafeteria_management_C_DBDataSet = new SS_Assment_Cafateria_C_.Cafeteria_management_C_DBDataSet();
-            this.orderallBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.orderallTableAdapter = new SS_Assment_Cafateria_C_.Cafeteria_management_C_DBDataSetTableAdapters.OrderallTableAdapter();
             this.orderidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.employeeidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.orderdateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,11 +50,15 @@
             this.unitpriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.subtotalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.totalamountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.orderallBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cafeteria_management_C_DBDataSet = new SS_Assment_Cafateria_C_.Cafeteria_management_C_DBDataSet();
+            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.orderallTableAdapter = new SS_Assment_Cafateria_C_.Cafeteria_management_C_DBDataSetTableAdapters.OrderallTableAdapter();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cafeteria_management_C_DBDataSet3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cafeteria_management_C_DBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.orderallBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cafeteria_management_C_DBDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // txtfilter
@@ -89,7 +87,7 @@
             // button1
             // 
             this.button1.Image = global::SS_Assment_Cafateria_C_.Properties.Resources.print_32px;
-            this.button1.Location = new System.Drawing.Point(506, 46);
+            this.button1.Location = new System.Drawing.Point(138, 66);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(55, 46);
             this.button1.TabIndex = 9;
@@ -98,17 +96,18 @@
             // button2
             // 
             this.button2.Image = global::SS_Assment_Cafateria_C_.Properties.Resources.Refresh_32px;
-            this.button2.Location = new System.Drawing.Point(445, 46);
+            this.button2.Location = new System.Drawing.Point(77, 66);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(55, 46);
             this.button2.TabIndex = 9;
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.button3.Image = global::SS_Assment_Cafateria_C_.Properties.Resources.registration_32px;
-            this.button3.Location = new System.Drawing.Point(384, 46);
+            this.button3.Location = new System.Drawing.Point(16, 66);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(55, 46);
             this.button3.TabIndex = 9;
@@ -131,35 +130,12 @@
             this.panel3.Size = new System.Drawing.Size(977, 702);
             this.panel3.TabIndex = 7;
             // 
-            // guna2HtmlLabel2
-            // 
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Georgia", 15.70909F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(12, 60);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(77, 31);
-            this.guna2HtmlLabel2.TabIndex = 10;
-            this.guna2HtmlLabel2.Text = "Orders";
-            this.guna2HtmlLabel2.TextAlignment = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Georgia", 15.70909F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(27, 56);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(77, 31);
-            this.guna2HtmlLabel1.TabIndex = 6;
-            this.guna2HtmlLabel1.Text = "Orders";
-            this.guna2HtmlLabel1.TextAlignment = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // guna2DataGridView1
             // 
-            this.guna2DataGridView1.AllowUserToAddRows = false;
-            this.guna2DataGridView1.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.guna2DataGridView1.AutoGenerateColumns = false;
+            this.guna2DataGridView1.BackgroundColor = System.Drawing.Color.Gray;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
@@ -168,7 +144,8 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.guna2DataGridView1.ColumnHeadersHeight = 15;
+            this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.guna2DataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.orderidDataGridViewTextBoxColumn,
             this.employeeidDataGridViewTextBoxColumn,
@@ -193,7 +170,6 @@
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.Location = new System.Drawing.Point(12, 134);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
-            this.guna2DataGridView1.ReadOnly = true;
             this.guna2DataGridView1.RowHeadersVisible = false;
             this.guna2DataGridView1.RowHeadersWidth = 47;
             this.guna2DataGridView1.Size = new System.Drawing.Size(953, 547);
@@ -203,15 +179,15 @@
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.Gray;
             this.guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 15;
-            this.guna2DataGridView1.ThemeStyle.ReadOnly = true;
+            this.guna2DataGridView1.ThemeStyle.ReadOnly = false;
             this.guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
@@ -221,32 +197,12 @@
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.guna2DataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellContentClick);
             // 
-            // cafeteria_management_C_DBDataSet3
-            // 
-            this.cafeteria_management_C_DBDataSet3.DataSetName = "Cafeteria_management_C_DBDataSet3";
-            this.cafeteria_management_C_DBDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // cafeteria_management_C_DBDataSet
-            // 
-            this.cafeteria_management_C_DBDataSet.DataSetName = "Cafeteria_management_C_DBDataSet";
-            this.cafeteria_management_C_DBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // orderallBindingSource
-            // 
-            this.orderallBindingSource.DataMember = "Orderall";
-            this.orderallBindingSource.DataSource = this.cafeteria_management_C_DBDataSet;
-            // 
-            // orderallTableAdapter
-            // 
-            this.orderallTableAdapter.ClearBeforeFill = true;
-            // 
             // orderidDataGridViewTextBoxColumn
             // 
             this.orderidDataGridViewTextBoxColumn.DataPropertyName = "order_id";
             this.orderidDataGridViewTextBoxColumn.HeaderText = "order_id";
             this.orderidDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.orderidDataGridViewTextBoxColumn.Name = "orderidDataGridViewTextBoxColumn";
-            this.orderidDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // employeeidDataGridViewTextBoxColumn
             // 
@@ -254,7 +210,6 @@
             this.employeeidDataGridViewTextBoxColumn.HeaderText = "employee_id";
             this.employeeidDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.employeeidDataGridViewTextBoxColumn.Name = "employeeidDataGridViewTextBoxColumn";
-            this.employeeidDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // orderdateDataGridViewTextBoxColumn
             // 
@@ -262,7 +217,6 @@
             this.orderdateDataGridViewTextBoxColumn.HeaderText = "order_date";
             this.orderdateDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.orderdateDataGridViewTextBoxColumn.Name = "orderdateDataGridViewTextBoxColumn";
-            this.orderdateDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // notesDataGridViewTextBoxColumn
             // 
@@ -270,7 +224,6 @@
             this.notesDataGridViewTextBoxColumn.HeaderText = "notes";
             this.notesDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.notesDataGridViewTextBoxColumn.Name = "notesDataGridViewTextBoxColumn";
-            this.notesDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // itemnameDataGridViewTextBoxColumn
             // 
@@ -278,7 +231,6 @@
             this.itemnameDataGridViewTextBoxColumn.HeaderText = "item_name";
             this.itemnameDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.itemnameDataGridViewTextBoxColumn.Name = "itemnameDataGridViewTextBoxColumn";
-            this.itemnameDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // categoryDataGridViewTextBoxColumn
             // 
@@ -286,7 +238,6 @@
             this.categoryDataGridViewTextBoxColumn.HeaderText = "category";
             this.categoryDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.categoryDataGridViewTextBoxColumn.Name = "categoryDataGridViewTextBoxColumn";
-            this.categoryDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // itempriceDataGridViewTextBoxColumn
             // 
@@ -294,7 +245,6 @@
             this.itempriceDataGridViewTextBoxColumn.HeaderText = "item_price";
             this.itempriceDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.itempriceDataGridViewTextBoxColumn.Name = "itempriceDataGridViewTextBoxColumn";
-            this.itempriceDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // quantityDataGridViewTextBoxColumn
             // 
@@ -302,7 +252,6 @@
             this.quantityDataGridViewTextBoxColumn.HeaderText = "quantity";
             this.quantityDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.quantityDataGridViewTextBoxColumn.Name = "quantityDataGridViewTextBoxColumn";
-            this.quantityDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // unitpriceDataGridViewTextBoxColumn
             // 
@@ -310,7 +259,6 @@
             this.unitpriceDataGridViewTextBoxColumn.HeaderText = "unit_price";
             this.unitpriceDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.unitpriceDataGridViewTextBoxColumn.Name = "unitpriceDataGridViewTextBoxColumn";
-            this.unitpriceDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // subtotalDataGridViewTextBoxColumn
             // 
@@ -318,7 +266,6 @@
             this.subtotalDataGridViewTextBoxColumn.HeaderText = "subtotal";
             this.subtotalDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.subtotalDataGridViewTextBoxColumn.Name = "subtotalDataGridViewTextBoxColumn";
-            this.subtotalDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // totalamountDataGridViewTextBoxColumn
             // 
@@ -326,7 +273,42 @@
             this.totalamountDataGridViewTextBoxColumn.HeaderText = "total_amount";
             this.totalamountDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.totalamountDataGridViewTextBoxColumn.Name = "totalamountDataGridViewTextBoxColumn";
-            this.totalamountDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // orderallBindingSource
+            // 
+            this.orderallBindingSource.DataMember = "Orderall";
+            this.orderallBindingSource.DataSource = this.cafeteria_management_C_DBDataSet;
+            // 
+            // cafeteria_management_C_DBDataSet
+            // 
+            this.cafeteria_management_C_DBDataSet.DataSetName = "Cafeteria_management_C_DBDataSet";
+            this.cafeteria_management_C_DBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // guna2HtmlLabel2
+            // 
+            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Georgia", 15.70909F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(12, 18);
+            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(77, 31);
+            this.guna2HtmlLabel2.TabIndex = 10;
+            this.guna2HtmlLabel2.Text = "Orders";
+            this.guna2HtmlLabel2.TextAlignment = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Georgia", 15.70909F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(27, 56);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(77, 31);
+            this.guna2HtmlLabel1.TabIndex = 6;
+            this.guna2HtmlLabel1.Text = "Orders";
+            this.guna2HtmlLabel1.TextAlignment = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // orderallTableAdapter
+            // 
+            this.orderallTableAdapter.ClearBeforeFill = true;
             // 
             // UC_order
             // 
@@ -338,9 +320,8 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cafeteria_management_C_DBDataSet3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cafeteria_management_C_DBDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.orderallBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cafeteria_management_C_DBDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -355,7 +336,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
-        private Cafeteria_management_C_DBDataSet3 cafeteria_management_C_DBDataSet3;
         private System.Windows.Forms.DataGridViewTextBoxColumn orderidDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn employeeidDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn orderdateDataGridViewTextBoxColumn;

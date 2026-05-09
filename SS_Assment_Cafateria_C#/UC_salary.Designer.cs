@@ -28,20 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.txtfilter = new System.Windows.Forms.TextBox();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.txtfilter = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.cafeteria_management_C_DBDataSet1 = new SS_Assment_Cafateria_C_.Cafeteria_management_C_DBDataSet1();
+            this.salaryBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.salaryTableAdapter = new SS_Assment_Cafateria_C_.Cafeteria_management_C_DBDataSet1TableAdapters.salaryTableAdapter();
+            this.salaryidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.employeeidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.salarymonthDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.basesalaryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bonusesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.deductionsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.netsalaryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.paymentdateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.notesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cafeteria_management_C_DBDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.salaryBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -52,6 +67,14 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(977, 702);
             this.panel1.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.panel3);
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(977, 702);
+            this.panel2.TabIndex = 1;
             // 
             // panel3
             // 
@@ -69,23 +92,43 @@
             this.panel3.Size = new System.Drawing.Size(977, 702);
             this.panel3.TabIndex = 7;
             // 
-            // dataGridView1
+            // button3
             // 
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 115);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 47;
-            this.dataGridView1.Size = new System.Drawing.Size(953, 575);
-            this.dataGridView1.TabIndex = 0;
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button3.Image = global::SS_Assment_Cafateria_C_.Properties.Resources.registration_32px;
+            this.button3.Location = new System.Drawing.Point(354, 46);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(55, 46);
+            this.button3.TabIndex = 10;
+            this.button3.UseVisualStyleBackColor = false;
             // 
-            // txtfilter
+            // button2
             // 
-            this.txtfilter.Location = new System.Drawing.Point(755, 56);
-            this.txtfilter.Multiline = true;
-            this.txtfilter.Name = "txtfilter";
-            this.txtfilter.Size = new System.Drawing.Size(210, 35);
-            this.txtfilter.TabIndex = 3;
+            this.button2.Image = global::SS_Assment_Cafateria_C_.Properties.Resources.Refresh_32px;
+            this.button2.Location = new System.Drawing.Point(415, 46);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(55, 46);
+            this.button2.TabIndex = 11;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Image = global::SS_Assment_Cafateria_C_.Properties.Resources.print_32px;
+            this.button1.Location = new System.Drawing.Point(476, 46);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(55, 46);
+            this.button1.TabIndex = 12;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // guna2HtmlLabel2
+            // 
+            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Algerian", 15.70909F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(12, 64);
+            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(101, 28);
+            this.guna2HtmlLabel2.TabIndex = 9;
+            this.guna2HtmlLabel2.Text = "Salary";
             // 
             // guna2ComboBox1
             // 
@@ -102,51 +145,114 @@
             this.guna2ComboBox1.Size = new System.Drawing.Size(212, 36);
             this.guna2ComboBox1.TabIndex = 8;
             // 
-            // button1
+            // txtfilter
             // 
-            this.button1.Image = global::SS_Assment_Cafateria_C_.Properties.Resources.print_32px;
-            this.button1.Location = new System.Drawing.Point(476, 46);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(55, 46);
-            this.button1.TabIndex = 12;
-            this.button1.UseVisualStyleBackColor = true;
+            this.txtfilter.Location = new System.Drawing.Point(755, 56);
+            this.txtfilter.Multiline = true;
+            this.txtfilter.Name = "txtfilter";
+            this.txtfilter.Size = new System.Drawing.Size(210, 35);
+            this.txtfilter.TabIndex = 3;
             // 
-            // button2
+            // dataGridView1
             // 
-            this.button2.Image = global::SS_Assment_Cafateria_C_.Properties.Resources.Refresh_32px;
-            this.button2.Location = new System.Drawing.Point(415, 46);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(55, 46);
-            this.button2.TabIndex = 11;
-            this.button2.UseVisualStyleBackColor = true;
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.salaryidDataGridViewTextBoxColumn,
+            this.employeeidDataGridViewTextBoxColumn,
+            this.salarymonthDataGridViewTextBoxColumn,
+            this.basesalaryDataGridViewTextBoxColumn,
+            this.bonusesDataGridViewTextBoxColumn,
+            this.deductionsDataGridViewTextBoxColumn,
+            this.netsalaryDataGridViewTextBoxColumn,
+            this.paymentdateDataGridViewTextBoxColumn,
+            this.notesDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.salaryBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 115);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 47;
+            this.dataGridView1.Size = new System.Drawing.Size(953, 575);
+            this.dataGridView1.TabIndex = 0;
             // 
-            // button3
+            // cafeteria_management_C_DBDataSet1
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button3.Image = global::SS_Assment_Cafateria_C_.Properties.Resources.registration_32px;
-            this.button3.Location = new System.Drawing.Point(354, 46);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(55, 46);
-            this.button3.TabIndex = 10;
-            this.button3.UseVisualStyleBackColor = false;
+            this.cafeteria_management_C_DBDataSet1.DataSetName = "Cafeteria_management_C_DBDataSet1";
+            this.cafeteria_management_C_DBDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // panel2
+            // salaryBindingSource
             // 
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(977, 702);
-            this.panel2.TabIndex = 1;
+            this.salaryBindingSource.DataMember = "salary";
+            this.salaryBindingSource.DataSource = this.cafeteria_management_C_DBDataSet1;
             // 
-            // guna2HtmlLabel2
+            // salaryTableAdapter
             // 
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Algerian", 15.70909F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(12, 64);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(101, 28);
-            this.guna2HtmlLabel2.TabIndex = 9;
-            this.guna2HtmlLabel2.Text = "Salary";
+            this.salaryTableAdapter.ClearBeforeFill = true;
+            // 
+            // salaryidDataGridViewTextBoxColumn
+            // 
+            this.salaryidDataGridViewTextBoxColumn.DataPropertyName = "salary_id";
+            this.salaryidDataGridViewTextBoxColumn.HeaderText = "salary_id";
+            this.salaryidDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.salaryidDataGridViewTextBoxColumn.Name = "salaryidDataGridViewTextBoxColumn";
+            this.salaryidDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // employeeidDataGridViewTextBoxColumn
+            // 
+            this.employeeidDataGridViewTextBoxColumn.DataPropertyName = "employee_id";
+            this.employeeidDataGridViewTextBoxColumn.HeaderText = "employee_id";
+            this.employeeidDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.employeeidDataGridViewTextBoxColumn.Name = "employeeidDataGridViewTextBoxColumn";
+            // 
+            // salarymonthDataGridViewTextBoxColumn
+            // 
+            this.salarymonthDataGridViewTextBoxColumn.DataPropertyName = "salary_month";
+            this.salarymonthDataGridViewTextBoxColumn.HeaderText = "salary_month";
+            this.salarymonthDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.salarymonthDataGridViewTextBoxColumn.Name = "salarymonthDataGridViewTextBoxColumn";
+            // 
+            // basesalaryDataGridViewTextBoxColumn
+            // 
+            this.basesalaryDataGridViewTextBoxColumn.DataPropertyName = "base_salary";
+            this.basesalaryDataGridViewTextBoxColumn.HeaderText = "base_salary";
+            this.basesalaryDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.basesalaryDataGridViewTextBoxColumn.Name = "basesalaryDataGridViewTextBoxColumn";
+            // 
+            // bonusesDataGridViewTextBoxColumn
+            // 
+            this.bonusesDataGridViewTextBoxColumn.DataPropertyName = "bonuses";
+            this.bonusesDataGridViewTextBoxColumn.HeaderText = "bonuses";
+            this.bonusesDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.bonusesDataGridViewTextBoxColumn.Name = "bonusesDataGridViewTextBoxColumn";
+            // 
+            // deductionsDataGridViewTextBoxColumn
+            // 
+            this.deductionsDataGridViewTextBoxColumn.DataPropertyName = "deductions";
+            this.deductionsDataGridViewTextBoxColumn.HeaderText = "deductions";
+            this.deductionsDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.deductionsDataGridViewTextBoxColumn.Name = "deductionsDataGridViewTextBoxColumn";
+            // 
+            // netsalaryDataGridViewTextBoxColumn
+            // 
+            this.netsalaryDataGridViewTextBoxColumn.DataPropertyName = "net_salary";
+            this.netsalaryDataGridViewTextBoxColumn.HeaderText = "net_salary";
+            this.netsalaryDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.netsalaryDataGridViewTextBoxColumn.Name = "netsalaryDataGridViewTextBoxColumn";
+            this.netsalaryDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // paymentdateDataGridViewTextBoxColumn
+            // 
+            this.paymentdateDataGridViewTextBoxColumn.DataPropertyName = "payment_date";
+            this.paymentdateDataGridViewTextBoxColumn.HeaderText = "payment_date";
+            this.paymentdateDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.paymentdateDataGridViewTextBoxColumn.Name = "paymentdateDataGridViewTextBoxColumn";
+            // 
+            // notesDataGridViewTextBoxColumn
+            // 
+            this.notesDataGridViewTextBoxColumn.DataPropertyName = "notes";
+            this.notesDataGridViewTextBoxColumn.HeaderText = "notes";
+            this.notesDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.notesDataGridViewTextBoxColumn.Name = "notesDataGridViewTextBoxColumn";
             // 
             // UC_salary
             // 
@@ -156,10 +262,12 @@
             this.Name = "UC_salary";
             this.Size = new System.Drawing.Size(977, 702);
             this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.cafeteria_management_C_DBDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.salaryBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -176,5 +284,17 @@
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
         private System.Windows.Forms.TextBox txtfilter;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn salaryidDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn employeeidDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn salarymonthDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn basesalaryDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn bonusesDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn deductionsDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn netsalaryDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn paymentdateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn notesDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource salaryBindingSource;
+        private Cafeteria_management_C_DBDataSet1 cafeteria_management_C_DBDataSet1;
+        private Cafeteria_management_C_DBDataSet1TableAdapters.salaryTableAdapter salaryTableAdapter;
     }
 }

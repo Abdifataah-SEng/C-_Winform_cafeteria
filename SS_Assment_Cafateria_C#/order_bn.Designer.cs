@@ -58,9 +58,12 @@
             this.guna2GradientTileButton2 = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.guna2GradientTileButton3 = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.guna2GradientTileButton4 = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.bunifuGroupBox1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.bunifuGroupBox2.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtorder_id
@@ -80,7 +83,7 @@
             this.txtorder_id.PlaceholderText = "";
             this.txtorder_id.ReadOnly = true;
             this.txtorder_id.SelectedText = "";
-            this.txtorder_id.Size = new System.Drawing.Size(304, 33);
+            this.txtorder_id.Size = new System.Drawing.Size(193, 33);
             this.txtorder_id.TabIndex = 0;
             this.txtorder_id.TextChanged += new System.EventHandler(this.txtorder_id_TextChanged);
             this.txtorder_id.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtorder_id_KeyPress);
@@ -423,6 +426,7 @@
             this.bunifuGroupBox1.BorderColor = System.Drawing.Color.LightGray;
             this.bunifuGroupBox1.BorderRadius = 1;
             this.bunifuGroupBox1.BorderThickness = 1;
+            this.bunifuGroupBox1.Controls.Add(this.guna2GradientTileButton4);
             this.bunifuGroupBox1.Controls.Add(this.bunifuLabel1);
             this.bunifuGroupBox1.Controls.Add(this.btorder_date);
             this.bunifuGroupBox1.Controls.Add(this.txtorder_id);
@@ -435,7 +439,7 @@
             this.bunifuGroupBox1.LabelAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bunifuGroupBox1.LabelIndent = 10;
             this.bunifuGroupBox1.LineStyle = Bunifu.UI.WinForms.BunifuGroupBox.LineStyles.Solid;
-            this.bunifuGroupBox1.Location = new System.Drawing.Point(6, 15);
+            this.bunifuGroupBox1.Location = new System.Drawing.Point(8, 43);
             this.bunifuGroupBox1.Name = "bunifuGroupBox1";
             this.bunifuGroupBox1.Size = new System.Drawing.Size(360, 396);
             this.bunifuGroupBox1.TabIndex = 4;
@@ -475,7 +479,7 @@
             this.groupBox1.Controls.Add(this.bunifuLabel8);
             this.groupBox1.Controls.Add(this.txtitem_price);
             this.groupBox1.Controls.Add(this.bunifuLabel7);
-            this.groupBox1.Location = new System.Drawing.Point(384, 26);
+            this.groupBox1.Location = new System.Drawing.Point(386, 54);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(343, 253);
             this.groupBox1.TabIndex = 5;
@@ -500,7 +504,7 @@
             this.bunifuGroupBox2.LabelAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bunifuGroupBox2.LabelIndent = 10;
             this.bunifuGroupBox2.LineStyle = Bunifu.UI.WinForms.BunifuGroupBox.LineStyles.Solid;
-            this.bunifuGroupBox2.Location = new System.Drawing.Point(384, 285);
+            this.bunifuGroupBox2.Location = new System.Drawing.Point(386, 313);
             this.bunifuGroupBox2.Name = "bunifuGroupBox2";
             this.bunifuGroupBox2.Size = new System.Drawing.Size(343, 354);
             this.bunifuGroupBox2.TabIndex = 6;
@@ -521,7 +525,7 @@
             this.guna2GradientTileButton1.Font = new System.Drawing.Font("Segoe UI", 15.70909F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GradientTileButton1.ForeColor = System.Drawing.Color.White;
             this.guna2GradientTileButton1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.guna2GradientTileButton1.Location = new System.Drawing.Point(6, 420);
+            this.guna2GradientTileButton1.Location = new System.Drawing.Point(8, 448);
             this.guna2GradientTileButton1.Name = "guna2GradientTileButton1";
             this.guna2GradientTileButton1.Size = new System.Drawing.Size(360, 67);
             this.guna2GradientTileButton1.TabIndex = 7;
@@ -542,7 +546,7 @@
             this.guna2GradientTileButton2.Font = new System.Drawing.Font("Segoe UI", 15.70909F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GradientTileButton2.ForeColor = System.Drawing.Color.White;
             this.guna2GradientTileButton2.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.guna2GradientTileButton2.Location = new System.Drawing.Point(6, 496);
+            this.guna2GradientTileButton2.Location = new System.Drawing.Point(8, 524);
             this.guna2GradientTileButton2.Name = "guna2GradientTileButton2";
             this.guna2GradientTileButton2.Size = new System.Drawing.Size(360, 67);
             this.guna2GradientTileButton2.TabIndex = 7;
@@ -563,7 +567,7 @@
             this.guna2GradientTileButton3.Font = new System.Drawing.Font("Segoe UI", 15.70909F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GradientTileButton3.ForeColor = System.Drawing.Color.White;
             this.guna2GradientTileButton3.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.guna2GradientTileButton3.Location = new System.Drawing.Point(6, 572);
+            this.guna2GradientTileButton3.Location = new System.Drawing.Point(8, 600);
             this.guna2GradientTileButton3.Name = "guna2GradientTileButton3";
             this.guna2GradientTileButton3.Size = new System.Drawing.Size(360, 67);
             this.guna2GradientTileButton3.TabIndex = 7;
@@ -576,18 +580,49 @@
             this.guna2ControlBox1.FillColor = System.Drawing.Color.Maroon;
             this.guna2ControlBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.70909F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(698, 2);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(733, 3);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(42, 38);
             this.guna2ControlBox1.TabIndex = 25;
             this.guna2ControlBox1.Click += new System.EventHandler(this.guna2ControlBox1_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(24)))), ((int)(((byte)(1)))));
+            this.panel1.Controls.Add(this.guna2ControlBox1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(778, 45);
+            this.panel1.TabIndex = 26;
+            // 
+            // guna2GradientTileButton4
+            // 
+            this.guna2GradientTileButton4.Animated = true;
+            this.guna2GradientTileButton4.AutoRoundedCorners = true;
+            this.guna2GradientTileButton4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientTileButton4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientTileButton4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientTileButton4.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientTileButton4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2GradientTileButton4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.guna2GradientTileButton4.FillColor2 = System.Drawing.Color.Olive;
+            this.guna2GradientTileButton4.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2GradientTileButton4.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientTileButton4.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.guna2GradientTileButton4.Location = new System.Drawing.Point(241, 58);
+            this.guna2GradientTileButton4.Name = "guna2GradientTileButton4";
+            this.guna2GradientTileButton4.Size = new System.Drawing.Size(94, 37);
+            this.guna2GradientTileButton4.TabIndex = 10;
+            this.guna2GradientTileButton4.Text = "Search";
+            this.guna2GradientTileButton4.Click += new System.EventHandler(this.guna2GradientTileButton4_Click);
+            // 
             // order_bn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(743, 651);
-            this.Controls.Add(this.guna2ControlBox1);
+            this.ClientSize = new System.Drawing.Size(778, 681);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.guna2GradientTileButton3);
             this.Controls.Add(this.guna2GradientTileButton2);
             this.Controls.Add(this.guna2GradientTileButton1);
@@ -604,6 +639,7 @@
             this.groupBox1.PerformLayout();
             this.bunifuGroupBox2.ResumeLayout(false);
             this.bunifuGroupBox2.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -639,5 +675,7 @@
         private Guna.UI2.WinForms.Guna2GradientTileButton guna2GradientTileButton2;
         private Guna.UI2.WinForms.Guna2GradientTileButton guna2GradientTileButton3;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
+        private System.Windows.Forms.Panel panel1;
+        private Guna.UI2.WinForms.Guna2GradientTileButton guna2GradientTileButton4;
     }
 }

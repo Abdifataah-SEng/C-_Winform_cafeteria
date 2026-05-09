@@ -11,7 +11,6 @@ C:\Users\pc\source\repos\SS_Assment_Cafateria_C#\SS_Assment_Cafateria_C#\obj\Deb
 C:\Users\pc\source\repos\SS_Assment_Cafateria_C#\SS_Assment_Cafateria_C#\obj\Debug\SS_Assment_Cafateria_C#.exe
 C:\Users\pc\source\repos\SS_Assment_Cafateria_C#\SS_Assment_Cafateria_C#\obj\Debug\SS_Assment_Cafateria_C#.pdb
 C:\Users\pc\source\repos\SS_Assment_Cafateria_C#\SS_Assment_Cafateria_C#\obj\Debug\SS_Assment_Cafateria_C#.exe.config
-C:\Users\pc\source\repos\SS_Assment_Cafateria_C#\SS_Assment_Cafateria_C#\obj\Debug\SS_Assment_Cafateria_C_.Dashbourd.resources
 C:\Users\pc\source\repos\SS_Assment_Cafateria_C#\SS_Assment_Cafateria_C#\obj\Debug\SS_Assment_Cafateria_C_.forgot_pass.resources
 C:\Users\pc\source\repos\SS_Assment_Cafateria_C#\SS_Assment_Cafateria_C#\obj\Debug\SS_Assment_Cafateria_C_.login.resources
 C:\Users\pc\source\repos\SS_Assment_Cafateria_C#\SS_Assment_Cafateria_C#\bin\Debug\Bunifu.UI.WinForms.dll

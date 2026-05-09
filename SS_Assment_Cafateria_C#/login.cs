@@ -1,4 +1,5 @@
-﻿using SS_Assessment_Cafateria_C_;
+﻿using Bunifu.UI.WinForms.Helpers.Transitions;
+using SS_Assessment_Cafateria_C_;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -73,14 +74,14 @@ namespace SS_Assment_Cafateria_C_
                 txtpass.UseSystemPasswordChar = false;
             }
             else
-            {
+
                 txtpass.UseSystemPasswordChar = true;
-            }
         }
 
         private void guna2ControlBox1_Click(object sender, EventArgs e)
         {
-            
+            Environment.Exit(0);
+
         }
     }
 }

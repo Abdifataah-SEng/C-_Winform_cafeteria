@@ -32,15 +32,17 @@ namespace SS_Assessment_Cafateria_C_
         {
             
             guna2HtmlLabel2.Text = "Dashboard";
-            
+            pnlDD.Controls.Clear();
+
         }
 
         private void bunifuButton21_Click(object sender, EventArgs e)
         {
             guna2HtmlLabel2.Text = "Order";
+            pnlDD.Controls.Clear();
             UC_order st = new UC_order();
             st.Dock = DockStyle.Fill;
-            bunifuPanel2.Controls.Add(st);
+            pnlDD.Controls.Add(st);
 
         }
 
@@ -51,14 +53,14 @@ namespace SS_Assessment_Cafateria_C_
 
         private void guna2ControlBox2_Click(object sender, EventArgs e)
         {
-            if(this.WindowState == FormWindowState.Maximized)
+            if (this.WindowState == FormWindowState.Normal)
             {
-                this.WindowState =FormWindowState.Normal;
+                this.WindowState = FormWindowState.Maximized;
             }
             else
-            {
-                               this.WindowState = FormWindowState.Maximized;
-            }
+                this.WindowState = FormWindowState.Normal;
+        
+        
         }
 
         private void guna2ControlBox3_Click(object sender, EventArgs e)
@@ -77,28 +79,30 @@ namespace SS_Assessment_Cafateria_C_
         private void bunifuButton22_Click(object sender, EventArgs e)
         {
             guna2HtmlLabel2.Text = "Payment";
-           
+            pnlDD.Controls.Clear();
             UC_payment py = new UC_payment();
             py.Dock = DockStyle.Fill;
-            bunifuPanel2.Controls.Add(py);
+            pnlDD.Controls.Add(py);
         }
 
         private void bunifuButton23_Click(object sender, EventArgs e)
         {
             guna2HtmlLabel2.Text = "Employees";
-            
+            pnlDD.Controls.Clear();
+
             UC_employee em = new UC_employee();
             em.Dock = DockStyle.Fill;
-            bunifuPanel2.Controls.Add(em);
+            pnlDD.Controls.Add(em);
         }
 
         private void bunifuButton24_Click(object sender, EventArgs e)
         {
             guna2HtmlLabel2.Text = "Salary";
-           
+            pnlDD.Controls.Clear();
+
             UC_salary sl = new UC_salary();
             sl.Dock = DockStyle.Fill;
-            bunifuPanel2.Controls.Add(sl);
+            pnlDD.Controls.Add(sl);
         }
     }
 }
