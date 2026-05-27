@@ -1,5 +1,41 @@
 # Database Documentation
 
+<style>
+.db-wrap{font-family:Segoe UI,Arial,sans-serif}.db-hero{display:grid;grid-template-columns:1.15fr .85fr;gap:24px;align-items:center;margin:24px 0;padding:28px;border-radius:26px;background:linear-gradient(135deg,#082f49,#2563eb 50%,#7c3aed);box-shadow:0 24px 55px rgba(37,99,235,.25);overflow:hidden;animation:dbFade .8s ease both}.db-hero h2{margin:12px 0 10px;color:#fff;font-size:34px;line-height:1.05}.db-hero p{color:#dbeafe;font-size:16px;line-height:1.65}.db-tag{display:inline-block;margin:4px 6px 4px 0;padding:7px 12px;border-radius:999px;background:rgba(255,255,255,.16);color:#fff;border:1px solid rgba(255,255,255,.25);font-size:12px;font-weight:800}.db-hero img{width:100%;height:245px;object-fit:cover;border-radius:20px;box-shadow:0 18px 40px rgba(0,0,0,.28);animation:dbFloat 5s ease-in-out infinite}.db-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px;margin:22px 0}.db-card{padding:18px;border-radius:20px;background:#fff;border:1px solid #dbeafe;box-shadow:0 16px 35px rgba(2,8,23,.09);transition:.25s ease;position:relative;overflow:hidden}.db-card:before{content:"";position:absolute;inset:0 0 auto;height:6px;background:linear-gradient(90deg,#0ea5e9,#8b5cf6)}.db-card:hover{transform:translateY(-6px);box-shadow:0 24px 50px rgba(37,99,235,.18)}.db-card img{width:46px;height:46px;object-fit:contain;margin-top:10px}.db-card h3{margin:8px 0 6px;color:#0f172a}.db-card p{margin:0;color:#475569;line-height:1.45}.db-badge{display:inline-block;margin-top:12px;padding:5px 10px;border-radius:999px;background:#eff6ff;color:#1d4ed8;font-weight:800;font-size:12px}.db-flow{margin:22px 0;padding:18px;border-radius:20px;background:linear-gradient(90deg,#eff6ff,#faf5ff);border:1px solid #dbeafe;box-shadow:0 14px 30px rgba(30,64,175,.1);font-weight:800;color:#1e3a8a;text-align:center;animation:dbPulse 2.5s ease-in-out infinite}.db-mix{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px;margin:20px 0}.db-mix img{width:100%;height:150px;object-fit:cover;border-radius:18px;box-shadow:0 16px 34px rgba(15,23,42,.16);transition:.25s}.db-mix img:hover{transform:scale(1.04)}@keyframes dbFade{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}@keyframes dbFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}@keyframes dbPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.015)}}@media(max-width:760px){.db-hero{grid-template-columns:1fr;padding:20px}.db-hero h2{font-size:26px}}
+</style>
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded",function(){document.querySelectorAll(".db-card,.db-flow").forEach(function(el,i){el.setAttribute("data-aos","zoom-in-up");el.style.animationDelay=(i*90)+"ms"});if(window.AOS){AOS.init({duration:850,once:true,easing:"ease-out-cubic"})}});
+</script>
+
+<div class="db-wrap">
+  <div class="db-hero">
+    <div>
+      <span class="db-tag">SQL Server LocalDB</span><span class="db-tag">Tables</span><span class="db-tag">Relationships</span>
+      <h2>Database Schema Map</h2>
+      <p>The app stores authentication, employees, orders, payments, and salary data. The dashboard also expects an <code>AbouvTotal</code> summary object for totals.</p>
+    </div>
+    <img src="state/ChatGPT%20Image%20May%2028%2C%202026%2C%2012_01_30%20AM.png" alt="Database schema map visual" />
+  </div>
+
+  <div class="db-flow">userlogin -> employees -> Orderall -> payment | employees -> salary | AbouvTotal -> dashboard cards</div>
+
+  <div class="db-grid">
+    <div class="db-card"><img src="SS_Assment_Cafateria_C%23/Resources/profile.png" alt="User icon" /><h3>userlogin</h3><p>Admin/operator credentials and role data.</p><span class="db-badge">Parent table</span></div>
+    <div class="db-card"><img src="SS_Assment_Cafateria_C%23/Resources/icons8-employee-64.png" alt="Employee icon" /><h3>employees</h3><p>Staff profile data linked to login users.</p><span class="db-badge">Core table</span></div>
+    <div class="db-card"><img src="SS_Assment_Cafateria_C%23/Resources/icons8-order-100.png" alt="Order icon" /><h3>Orderall</h3><p>Food and drink order records linked to employees.</p><span class="db-badge">Order data</span></div>
+    <div class="db-card"><img src="SS_Assment_Cafateria_C%23/Resources/icons8-payment-64.png" alt="Payment icon" /><h3>payment</h3><p>Payment amount, method, date, and status.</p><span class="db-badge">Payment data</span></div>
+    <div class="db-card"><img src="SS_Assment_Cafateria_C%23/Resources/icons8-salary-94.png" alt="Salary icon" /><h3>salary</h3><p>Salary month, base salary, bonuses, and deductions.</p><span class="db-badge">Payroll data</span></div>
+  </div>
+  <div class="db-mix">
+    <img src="state/images%20%281%29.jpeg" alt="Database server visual" />
+    <img src="SS_Assment_Cafateria_C%23/Resources/rodeo-project-management-software-PYqzYhTNjho-unsplash.jpg" alt="Project dashboard photo" />
+    <img src="state/ChatGPT%20Image%20May%2028%2C%202026%2C%2012_01_30%20AM.png" alt="Schema map visual" />
+  </div>
+</div>
+
 The application expects a SQL Server LocalDB database named `Cafeteria_management_C_DB`.
 
 Configured connection string:
