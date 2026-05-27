@@ -33,6 +33,11 @@ namespace SS_Assessment_Cafateria_C_
             
             guna2HtmlLabel2.Text = "Dashboard";
             pnlDD.Controls.Clear();
+            ui_Dashbourd iu = new ui_Dashbourd();
+            iu.Dock = DockStyle.Fill;
+            pnlDD.Controls.Add(iu);
+             iu.Dock = DockStyle.Fill;
+
 
         }
 
@@ -89,10 +94,11 @@ namespace SS_Assessment_Cafateria_C_
         {
             guna2HtmlLabel2.Text = "Employees";
             pnlDD.Controls.Clear();
-
             UC_employee em = new UC_employee();
             em.Dock = DockStyle.Fill;
             pnlDD.Controls.Add(em);
+
+            
         }
 
         private void bunifuButton24_Click(object sender, EventArgs e)
@@ -103,6 +109,22 @@ namespace SS_Assessment_Cafateria_C_
             UC_salary sl = new UC_salary();
             sl.Dock = DockStyle.Fill;
             pnlDD.Controls.Add(sl);
+        }
+
+        private void bunifuButton25_Click(object sender, EventArgs e)
+        {
+            BackUp up = new BackUp();
+            up.Show();
+        }
+
+        private void pnlDD_Click(object sender, EventArgs e)
+        {
+            ui_Dashbourd iu = new ui_Dashbourd();
+           
+            iu.Dock = DockStyle.Fill;
+            pnlDD.Controls.Add(iu);
+
+
         }
     }
 }

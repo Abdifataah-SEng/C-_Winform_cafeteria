@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -33,9 +33,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="Bunifu.UI.WinForms">
       <HintPath>..\..\..\..\..\..\UI FWORK\Bunifu_UI_WinForm_6.1\Bunifu_UI_WinForm_6.1\Bunifu.UI.WinForms.dll</HintPath>
     </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="Guna.UI2">
       <HintPath>..\..\..\..\..\..\UI FWORK\Guna.UI2-2.0.47 Pre-activated\Guna.UI2-2.0.47-Cracked-main\Guna.UI2.dll</HintPath>
     </Reference>
@@ -45,6 +50,8 @@
     <Reference Include="System.Management" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -56,25 +63,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BackUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BackUp.Designer.cs">
+      <DependentUpon>BackUp.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cafeteria_management_C_DBDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Cafeteria_management_C_DBDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Cafeteria_management_C_DBDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Cafeteria_management_C_DBDataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Cafeteria_management_C_DBDataSet2.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Cafeteria_management_C_DBDataSet2.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Cafeteria_management_C_DBDataSet3.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Cafeteria_management_C_DBDataSet3.xsd</DependentUpon>
     </Compile>
     <Compile Include="Dashbourd.cs">
       <SubType>Form</SubType>
@@ -93,6 +91,18 @@
     </Compile>
     <Compile Include="employee.Designer.cs">
       <DependentUpon>employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeRP.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeRP.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EmployeeVRPcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeVRPcs.Designer.cs">
+      <DependentUpon>EmployeeVRPcs.cs</DependentUpon>
     </Compile>
     <Compile Include="forgot_pass.cs">
       <SubType>Form</SubType>
@@ -118,6 +128,18 @@
     <Compile Include="Order.Designer.cs">
       <DependentUpon>Order.cs</DependentUpon>
     </Compile>
+    <Compile Include="OrderRT.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrderRT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OrderVRP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderVRP.Designer.cs">
+      <DependentUpon>OrderVRP.cs</DependentUpon>
+    </Compile>
     <Compile Include="order_bn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,11 +154,35 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="pymentRP1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pymentRP.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="pymentVRP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pymentVRP.Designer.cs">
+      <DependentUpon>pymentVRP.cs</DependentUpon>
+    </Compile>
     <Compile Include="Salary.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Salary.Designer.cs">
       <DependentUpon>Salary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalaryRP.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalaryRP.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SlaryVRP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SlaryVRP.Designer.cs">
+      <DependentUpon>SlaryVRP.cs</DependentUpon>
     </Compile>
     <Compile Include="UC_employee.cs">
       <SubType>UserControl</SubType>
@@ -162,6 +208,15 @@
     <Compile Include="UC_salary.Designer.cs">
       <DependentUpon>UC_salary.cs</DependentUpon>
     </Compile>
+    <Compile Include="ui_Dashbourd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui_Dashbourd.Designer.cs">
+      <DependentUpon>ui_Dashbourd.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BackUp.resx">
+      <DependentUpon>BackUp.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dashbourd.resx">
       <DependentUpon>Dashbourd.cs</DependentUpon>
     </EmbeddedResource>
@@ -170,6 +225,13 @@
     </EmbeddedResource>
     <EmbeddedResource Include="employee.resx">
       <DependentUpon>employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeRP.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>EmployeeRP.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeVRPcs.resx">
+      <DependentUpon>EmployeeVRPcs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forgot_pass.resx">
       <DependentUpon>forgot_pass.cs</DependentUpon>
@@ -182,6 +244,13 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Order.resx">
       <DependentUpon>Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderRT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>OrderRT.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderVRP.resx">
+      <DependentUpon>OrderVRP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="order_bn.resx">
       <DependentUpon>order_bn.cs</DependentUpon>
@@ -199,9 +268,24 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="pymentRP.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>pymentRP1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pymentVRP.resx">
+      <DependentUpon>pymentVRP.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report2.rdlc" />
     <EmbeddedResource Include="Salary.resx">
       <DependentUpon>Salary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalaryRP.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SalaryRP.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SlaryVRP.resx">
+      <DependentUpon>SlaryVRP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_employee.resx">
       <DependentUpon>UC_employee.cs</DependentUpon>
@@ -215,6 +299,9 @@
     <EmbeddedResource Include="UC_salary.resx">
       <DependentUpon>UC_salary.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ui_Dashbourd.resx">
+      <DependentUpon>ui_Dashbourd.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Cafeteria_management_C_DBDataSet.xsc">
       <DependentUpon>Cafeteria_management_C_DBDataSet.xsd</DependentUpon>
     </None>
@@ -225,39 +312,6 @@
     </None>
     <None Include="Cafeteria_management_C_DBDataSet.xss">
       <DependentUpon>Cafeteria_management_C_DBDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="Cafeteria_management_C_DBDataSet1.xsc">
-      <DependentUpon>Cafeteria_management_C_DBDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="Cafeteria_management_C_DBDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Cafeteria_management_C_DBDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Cafeteria_management_C_DBDataSet1.xss">
-      <DependentUpon>Cafeteria_management_C_DBDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="Cafeteria_management_C_DBDataSet2.xsc">
-      <DependentUpon>Cafeteria_management_C_DBDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="Cafeteria_management_C_DBDataSet2.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Cafeteria_management_C_DBDataSet2.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Cafeteria_management_C_DBDataSet2.xss">
-      <DependentUpon>Cafeteria_management_C_DBDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="Cafeteria_management_C_DBDataSet3.xsc">
-      <DependentUpon>Cafeteria_management_C_DBDataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="Cafeteria_management_C_DBDataSet3.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Cafeteria_management_C_DBDataSet3.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Cafeteria_management_C_DBDataSet3.xss">
-      <DependentUpon>Cafeteria_management_C_DBDataSet3.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -304,6 +358,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\print_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\louis-hansel-CqVS_klTib4-unsplash1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\one.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\two.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rodeo-project-management-software-PYqzYhTNjho-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-employee-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-order-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-payment-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-salary-94.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

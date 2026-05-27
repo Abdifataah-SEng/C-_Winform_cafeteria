@@ -30,14 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(payment));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cb_status = new System.Windows.Forms.ComboBox();
+            this.cb_py_method = new System.Windows.Forms.ComboBox();
+            this.guna2GradientTileButton4 = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel9 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.txtpy_method = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_py_id = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_Order_id = new Guna.UI2.WinForms.Guna2TextBox();
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.txtStatus = new Guna.UI2.WinForms.Guna2TextBox();
             this.bunifuLabel8 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.txtAmount = new Guna.UI2.WinForms.Guna2TextBox();
@@ -47,22 +48,21 @@
             this.guna2GradientTileButton1 = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.guna2GradientTileButton4 = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.cb_status);
+            this.groupBox1.Controls.Add(this.cb_py_method);
             this.groupBox1.Controls.Add(this.guna2GradientTileButton4);
             this.groupBox1.Controls.Add(this.guna2DateTimePicker1);
             this.groupBox1.Controls.Add(this.bunifuLabel3);
             this.groupBox1.Controls.Add(this.bunifuLabel9);
-            this.groupBox1.Controls.Add(this.txtpy_method);
             this.groupBox1.Controls.Add(this.txt_py_id);
             this.groupBox1.Controls.Add(this.txt_Order_id);
             this.groupBox1.Controls.Add(this.bunifuLabel2);
-            this.groupBox1.Controls.Add(this.txtStatus);
             this.groupBox1.Controls.Add(this.bunifuLabel8);
             this.groupBox1.Controls.Add(this.bunifuLabel1);
             this.groupBox1.Controls.Add(this.txtAmount);
@@ -74,6 +74,54 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Payment";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // cb_status
+            // 
+            this.cb_status.FormattingEnabled = true;
+            this.cb_status.ItemHeight = 13;
+            this.cb_status.Items.AddRange(new object[] {
+            "pending",
+            "completed",
+            "failed",
+            "refunded"});
+            this.cb_status.Location = new System.Drawing.Point(26, 432);
+            this.cb_status.Name = "cb_status";
+            this.cb_status.Size = new System.Drawing.Size(303, 21);
+            this.cb_status.TabIndex = 12;
+            // 
+            // cb_py_method
+            // 
+            this.cb_py_method.FormattingEnabled = true;
+            this.cb_py_method.ItemHeight = 13;
+            this.cb_py_method.Items.AddRange(new object[] {
+            "cash",
+            "card",
+            "mobile"});
+            this.cb_py_method.Location = new System.Drawing.Point(25, 287);
+            this.cb_py_method.Name = "cb_py_method";
+            this.cb_py_method.Size = new System.Drawing.Size(303, 21);
+            this.cb_py_method.TabIndex = 12;
+            // 
+            // guna2GradientTileButton4
+            // 
+            this.guna2GradientTileButton4.Animated = true;
+            this.guna2GradientTileButton4.AutoRoundedCorners = true;
+            this.guna2GradientTileButton4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientTileButton4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientTileButton4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientTileButton4.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientTileButton4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2GradientTileButton4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.guna2GradientTileButton4.FillColor2 = System.Drawing.Color.Olive;
+            this.guna2GradientTileButton4.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2GradientTileButton4.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientTileButton4.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.guna2GradientTileButton4.Location = new System.Drawing.Point(235, 61);
+            this.guna2GradientTileButton4.Name = "guna2GradientTileButton4";
+            this.guna2GradientTileButton4.Size = new System.Drawing.Size(94, 33);
+            this.guna2GradientTileButton4.TabIndex = 11;
+            this.guna2GradientTileButton4.Text = "Search";
+            this.guna2GradientTileButton4.Click += new System.EventHandler(this.guna2GradientTileButton4_Click);
             // 
             // guna2DateTimePicker1
             // 
@@ -120,26 +168,6 @@
             this.bunifuLabel9.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel9.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             this.bunifuLabel9.Click += new System.EventHandler(this.bunifuLabel9_Click);
-            // 
-            // txtpy_method
-            // 
-            this.txtpy_method.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtpy_method.DefaultText = "";
-            this.txtpy_method.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtpy_method.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtpy_method.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtpy_method.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtpy_method.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtpy_method.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtpy_method.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtpy_method.Location = new System.Drawing.Point(25, 285);
-            this.txtpy_method.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtpy_method.Name = "txtpy_method";
-            this.txtpy_method.PlaceholderText = "";
-            this.txtpy_method.SelectedText = "";
-            this.txtpy_method.Size = new System.Drawing.Size(304, 33);
-            this.txtpy_method.TabIndex = 2;
-            this.txtpy_method.TextChanged += new System.EventHandler(this.guna2TextBox3_TextChanged);
             // 
             // txt_py_id
             // 
@@ -196,26 +224,6 @@
             this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             this.bunifuLabel2.Click += new System.EventHandler(this.bunifuLabel2_Click);
-            // 
-            // txtStatus
-            // 
-            this.txtStatus.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtStatus.DefaultText = "";
-            this.txtStatus.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtStatus.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtStatus.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtStatus.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtStatus.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtStatus.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtStatus.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtStatus.Location = new System.Drawing.Point(25, 435);
-            this.txtStatus.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtStatus.Name = "txtStatus";
-            this.txtStatus.PlaceholderText = "";
-            this.txtStatus.SelectedText = "";
-            this.txtStatus.Size = new System.Drawing.Size(304, 33);
-            this.txtStatus.TabIndex = 4;
-            this.txtStatus.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             // 
             // bunifuLabel8
             // 
@@ -358,6 +366,7 @@
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(42, 38);
             this.guna2ControlBox1.TabIndex = 26;
+            this.guna2ControlBox1.Click += new System.EventHandler(this.guna2ControlBox1_Click);
             // 
             // panel1
             // 
@@ -368,26 +377,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(433, 45);
             this.panel1.TabIndex = 27;
-            // 
-            // guna2GradientTileButton4
-            // 
-            this.guna2GradientTileButton4.Animated = true;
-            this.guna2GradientTileButton4.AutoRoundedCorners = true;
-            this.guna2GradientTileButton4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientTileButton4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientTileButton4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientTileButton4.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientTileButton4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientTileButton4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.guna2GradientTileButton4.FillColor2 = System.Drawing.Color.Olive;
-            this.guna2GradientTileButton4.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientTileButton4.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientTileButton4.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.guna2GradientTileButton4.Location = new System.Drawing.Point(235, 61);
-            this.guna2GradientTileButton4.Name = "guna2GradientTileButton4";
-            this.guna2GradientTileButton4.Size = new System.Drawing.Size(94, 33);
-            this.guna2GradientTileButton4.TabIndex = 11;
-            this.guna2GradientTileButton4.Text = "Search";
             // 
             // payment
             // 
@@ -403,6 +392,7 @@
             this.Name = "payment";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "payment";
+            this.Load += new System.EventHandler(this.payment_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -415,11 +405,9 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel3;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel9;
-        private Guna.UI2.WinForms.Guna2TextBox txtpy_method;
         private Guna.UI2.WinForms.Guna2TextBox txt_py_id;
         private Guna.UI2.WinForms.Guna2TextBox txt_Order_id;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
-        private Guna.UI2.WinForms.Guna2TextBox txtStatus;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel8;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
         private Guna.UI2.WinForms.Guna2TextBox txtAmount;
@@ -431,5 +419,7 @@
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private System.Windows.Forms.Panel panel1;
         private Guna.UI2.WinForms.Guna2GradientTileButton guna2GradientTileButton4;
+        private System.Windows.Forms.ComboBox cb_status;
+        private System.Windows.Forms.ComboBox cb_py_method;
     }
 }

@@ -1,0 +1,236 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Data.SqlClient;
+
+namespace SS_Assment_Cafateria_C_
+{
+    public partial class payment : Form
+    {
+        SqlConnection con = new SqlConnection(@"Server=(localdb)\ProjectModels;Database=Cafeteria_management_C_DB; Integrated Security = true;");
+        public payment()
+        {
+            InitializeComponent();
+        }
+       void clear()
+        {
+            txt_py_id.Clear();
+            txt_Order_id.Clear();
+            txtAmount.Clear();
+            cb_py_method.SelectedIndex = -1;
+            guna2DateTimePicker1.Value = DateTime.Now;
+            cb_status.SelectedIndex = -1;
+        }
+       
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuLabel3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuLabel9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuLabel2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuLabel8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox7_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuLabel7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2GradientTileButton3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (con.State != ConnectionState.Open)
+                {
+                    con.Open();
+                    SqlCommand cmd = new SqlCommand("Delete from payment where payment_id=@payment_id", con);
+                    cmd.Parameters.AddWithValue("@payment_id", txt_py_id.Text);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("delete seccessfuly");
+                    clear();
+                }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Error:" + ex.Message);
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        private void guna2GradientTileButton2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (con.State != ConnectionState.Open)
+                {
+                    con.Open();
+                    SqlCommand cmd = new SqlCommand("Update payment Set order_id=@order_id, amount=@amount, payment_method=@payment_method, payment_date=@payment_date, status=@status Where payment_id=@payment_id", con);
+                    
+                    cmd.Parameters.AddWithValue("@payment_id", txt_py_id.Text);
+                    cmd.Parameters.AddWithValue("@order_id", txt_Order_id.Text);
+                    cmd.Parameters.AddWithValue("@amount", txtAmount.Text);
+                    cmd.Parameters.AddWithValue("@payment_method", cb_py_method.Text);
+                    cmd.Parameters.AddWithValue("@payment_date", guna2DateTimePicker1.Value);
+                    cmd.Parameters.AddWithValue("@status", cb_status.Text);
+                    MessageBox.Show("update correct");
+                    cmd.ExecuteNonQuery();
+                    clear();
+                }
+                }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Error" + ex.Message);
+            }
+           
+            
+        }
+
+        private void guna2GradientTileButton1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if(con.State != ConnectionState.Open)
+                {
+                    con.Open();
+                    SqlCommand cmd = new SqlCommand("Insert into payment (payment_id, order_id, amount, payment_method, payment_date, status) Values (@payment_id, @order_id, @amount, @payment_method, @payment_date, @status)", con);
+                    cmd.Parameters.AddWithValue("@payment_id", txt_py_id.Text);
+                    cmd.Parameters.AddWithValue("@order_id", txt_Order_id.Text);
+                    cmd.Parameters.AddWithValue("@amount", txtAmount.Text);
+                    cmd.Parameters.AddWithValue("@payment_method", cb_py_method.Text);
+                    cmd.Parameters.AddWithValue("@payment_date", guna2DateTimePicker1.Value);
+                    cmd.Parameters.AddWithValue("@status", cb_status.Text);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Payment added successfully");
+                    clear();
+                }
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Error: Please check your input and try again.");
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        private void guna2DateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2GradientTileButton4_Click(object sender, EventArgs e)
+        {
+            
+            
+            try
+            {
+                if (string.IsNullOrWhiteSpace(txt_py_id.Text))
+                {
+                    MessageBox.Show("Please enter Payment ID");
+                    return;
+                }
+
+                if (con.State != ConnectionState.Open)
+                {
+                    con.Open();
+                    SqlCommand cmd = new SqlCommand("Select * from payment where payment_id=@payment_id", con);
+                    cmd.Parameters.AddWithValue("@payment_id", txt_py_id.Text);
+                    SqlDataReader reader = cmd.ExecuteReader();
+                    if (reader.Read())
+                    {
+                        txt_Order_id.Text = reader["order_id"].ToString();
+                        txtAmount.Text = reader["amount"].ToString();
+                        cb_py_method.Text = reader["payment_method"].ToString();
+                        guna2DateTimePicker1.Value = Convert.ToDateTime(reader["payment_date"]);
+                        cb_status.Text = reader["status"].ToString();
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("Payment not found");
+                    }
+                }
+            
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Error:" + ex.Message);
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        private void guna2ControlBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void payment_Load(object sender, EventArgs e)
+        {
+
+        }
+    }
+}

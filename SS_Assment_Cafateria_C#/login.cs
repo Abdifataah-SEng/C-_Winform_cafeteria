@@ -23,6 +23,8 @@ namespace SS_Assment_Cafateria_C_
         {
             InitializeComponent();
         }
+        
+        
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -69,19 +71,18 @@ namespace SS_Assment_Cafateria_C_
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if (txtpass.UseSystemPasswordChar == true)
-            {
-                txtpass.UseSystemPasswordChar = false;
-            }
-            else
-
-                txtpass.UseSystemPasswordChar = true;
+           txtpass.UseSystemPasswordChar = !cboxshow.Checked;
         }
 
         private void guna2ControlBox1_Click(object sender, EventArgs e)
         {
             Environment.Exit(0);
 
+        }
+
+        private void txtpass_TextChanged(object sender, EventArgs e)
+        {
+            txtpass.UseSystemPasswordChar = true;
         }
     }
 }

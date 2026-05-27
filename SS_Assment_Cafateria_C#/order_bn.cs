@@ -9,11 +9,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
+
 namespace SS_Assment_Cafateria_C_
 {
     public partial class order_bn : Form
     {
             SqlConnection con = new SqlConnection(@"Server=(localdb)\ProjectModels;Database=Cafeteria_management_C_DB; Integrated Security = true;");
+
         public order_bn()
         {
             InitializeComponent();
@@ -25,7 +27,7 @@ namespace SS_Assment_Cafateria_C_
             btorder_date.Value = DateTime.Now;
             richTextBox1.Clear();
             txtitem_name.Clear();
-            txtcategory.Clear();
+            
             txtitem_price.Clear();
             txtquantity.Clear();
             txtunitprice.Clear();
@@ -87,7 +89,7 @@ namespace SS_Assment_Cafateria_C_
                     cmd.Parameters.AddWithValue("@order_date", btorder_date.Value);
                     cmd.Parameters.AddWithValue("@notes", richTextBox1.Text);
                     cmd.Parameters.AddWithValue("@item_name", txtitem_name.Text);
-                    cmd.Parameters.AddWithValue("@category", txtcategory.Text);
+                    cmd.Parameters.AddWithValue("@category", cbox_category.Text);
                     cmd.Parameters.AddWithValue("@item_price", txtitem_price.Text);
                     cmd.Parameters.AddWithValue("@quantity", txtquantity.Text);
                     cmd.Parameters.AddWithValue("@unit_price", txtunitprice.Text);
@@ -118,18 +120,19 @@ namespace SS_Assment_Cafateria_C_
                 {
                     con.Open();
                     SqlCommand cmd = new SqlCommand("UPDATE Orderall SET employee_id = @employee_id, order_date = @order_date, notes = @notes, item_name = @item_name, category = @category, item_price = @item_price, quantity = @quantity, unit_price = @unit_price,  total_amount = @total_amount WHERE order_id = @order_id", con);
+                    cmd.Parameters.AddWithValue("@order_id", txtorder_id.Text);
                     cmd.Parameters.AddWithValue("@employee_id", txtemployee_id.Text);
                     cmd.Parameters.AddWithValue("@order_date", btorder_date.Value);
                     cmd.Parameters.AddWithValue("@notes", richTextBox1.Text);
                     cmd.Parameters.AddWithValue("@item_name", txtitem_name.Text);
-                    cmd.Parameters.AddWithValue("@category", txtcategory.Text);
+                    cmd.Parameters.AddWithValue("@category", cbox_category.Text);
                     cmd.Parameters.AddWithValue("@item_price", txtitem_price.Text);
                     cmd.Parameters.AddWithValue("@quantity", txtquantity.Text);
                     cmd.Parameters.AddWithValue("@unit_price", txtunitprice.Text);
                     cmd.Parameters.AddWithValue("@total_amount", txttotalamount.Text);
                     cmd.ExecuteNonQuery();
                     clear();
-                    MessageBox.Show("delete seccessfuly");
+                    MessageBox.Show("update seccessfuly");
                 }
             }
             catch (Exception ex)
@@ -196,9 +199,9 @@ namespace SS_Assment_Cafateria_C_
                 SqlDataReader dr = cmd.ExecuteReader();
                 if (dr.Read())
                 {
-
+                    
                     txtitem_name.Text = dr["item_name"].ToString();
-                    txtcategory.Text = dr["category"].ToString();
+                    cbox_category.Text = dr["category"].ToString();
                     txtitem_price.Text = dr["item_price"].ToString();
                     txtquantity.Text = dr["quantity"].ToString();
                     txtunitprice.Text = dr["unit_price"].ToString();
@@ -223,6 +226,11 @@ namespace SS_Assment_Cafateria_C_
             {
                 con.Close();
             }
+        }
+
+        private void txtemployee_id_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

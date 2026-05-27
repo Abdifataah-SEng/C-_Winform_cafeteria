@@ -30,22 +30,22 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Salary));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.txtnote = new System.Windows.Forms.RichTextBox();
             this.guna2GradientTileButton4 = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel9 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtBase_sl = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtID = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox6 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtEmp_id = new Guna.UI2.WinForms.Guna2TextBox();
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtDesd = new Guna.UI2.WinForms.Guna2TextBox();
             this.bunifuLabel8 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel5 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.guna2TextBox7 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtBonuses = new Guna.UI2.WinForms.Guna2TextBox();
             this.bunifuLabel7 = new Bunifu.UI.WinForms.BunifuLabel();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2GradientTileButton3 = new Guna.UI2.WinForms.Guna2GradientTileButton();
@@ -58,22 +58,22 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.guna2DateTimePicker2);
+            this.groupBox1.Controls.Add(this.txtnote);
             this.groupBox1.Controls.Add(this.guna2GradientTileButton4);
             this.groupBox1.Controls.Add(this.guna2DateTimePicker1);
             this.groupBox1.Controls.Add(this.bunifuLabel3);
             this.groupBox1.Controls.Add(this.bunifuLabel9);
-            this.groupBox1.Controls.Add(this.guna2TextBox3);
+            this.groupBox1.Controls.Add(this.txtBase_sl);
             this.groupBox1.Controls.Add(this.txtID);
-            this.groupBox1.Controls.Add(this.guna2TextBox6);
+            this.groupBox1.Controls.Add(this.txtEmp_id);
             this.groupBox1.Controls.Add(this.bunifuLabel2);
-            this.groupBox1.Controls.Add(this.guna2TextBox4);
-            this.groupBox1.Controls.Add(this.guna2TextBox2);
-            this.groupBox1.Controls.Add(this.guna2TextBox1);
+            this.groupBox1.Controls.Add(this.txtDesd);
             this.groupBox1.Controls.Add(this.bunifuLabel8);
             this.groupBox1.Controls.Add(this.bunifuLabel5);
             this.groupBox1.Controls.Add(this.bunifuLabel4);
             this.groupBox1.Controls.Add(this.bunifuLabel1);
-            this.groupBox1.Controls.Add(this.guna2TextBox7);
+            this.groupBox1.Controls.Add(this.txtBonuses);
             this.groupBox1.Controls.Add(this.bunifuLabel7);
             this.groupBox1.Location = new System.Drawing.Point(14, 60);
             this.groupBox1.Name = "groupBox1";
@@ -82,6 +82,27 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Salary";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // guna2DateTimePicker2
+            // 
+            this.guna2DateTimePicker2.Checked = true;
+            this.guna2DateTimePicker2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.guna2DateTimePicker2.Location = new System.Drawing.Point(137, 377);
+            this.guna2DateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.guna2DateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
+            this.guna2DateTimePicker2.Size = new System.Drawing.Size(266, 35);
+            this.guna2DateTimePicker2.TabIndex = 11;
+            this.guna2DateTimePicker2.Value = new System.DateTime(2026, 5, 11, 0, 15, 56, 582);
+            // 
+            // txtnote
+            // 
+            this.txtnote.Location = new System.Drawing.Point(137, 430);
+            this.txtnote.Name = "txtnote";
+            this.txtnote.Size = new System.Drawing.Size(271, 78);
+            this.txtnote.TabIndex = 10;
+            this.txtnote.Text = "";
             // 
             // guna2GradientTileButton4
             // 
@@ -97,7 +118,7 @@
             this.guna2GradientTileButton4.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GradientTileButton4.ForeColor = System.Drawing.Color.White;
             this.guna2GradientTileButton4.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.guna2GradientTileButton4.Location = new System.Drawing.Point(296, 31);
+            this.guna2GradientTileButton4.Location = new System.Drawing.Point(309, 31);
             this.guna2GradientTileButton4.Name = "guna2GradientTileButton4";
             this.guna2GradientTileButton4.Size = new System.Drawing.Size(94, 37);
             this.guna2GradientTileButton4.TabIndex = 9;
@@ -109,7 +130,7 @@
             this.guna2DateTimePicker1.Checked = true;
             this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(124, 128);
+            this.guna2DateTimePicker1.Location = new System.Drawing.Point(137, 152);
             this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
@@ -123,7 +144,7 @@
             this.bunifuLabel3.AutoEllipsis = false;
             this.bunifuLabel3.CursorType = null;
             this.bunifuLabel3.Font = new System.Drawing.Font("Segoe UI", 11.12727F);
-            this.bunifuLabel3.Location = new System.Drawing.Point(25, 192);
+            this.bunifuLabel3.Location = new System.Drawing.Point(36, 212);
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel3.Size = new System.Drawing.Size(85, 23);
@@ -138,7 +159,7 @@
             this.bunifuLabel9.AutoEllipsis = false;
             this.bunifuLabel9.CursorType = null;
             this.bunifuLabel9.Font = new System.Drawing.Font("Segoe UI", 11.12727F);
-            this.bunifuLabel9.Location = new System.Drawing.Point(34, 45);
+            this.bunifuLabel9.Location = new System.Drawing.Point(52, 45);
             this.bunifuLabel9.Name = "bunifuLabel9";
             this.bunifuLabel9.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel9.Size = new System.Drawing.Size(69, 23);
@@ -147,24 +168,24 @@
             this.bunifuLabel9.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel9.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // guna2TextBox3
+            // txtBase_sl
             // 
-            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox3.DefaultText = "";
-            this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.Location = new System.Drawing.Point(124, 188);
-            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2TextBox3.Name = "guna2TextBox3";
-            this.guna2TextBox3.PlaceholderText = "";
-            this.guna2TextBox3.SelectedText = "";
-            this.guna2TextBox3.Size = new System.Drawing.Size(266, 30);
-            this.guna2TextBox3.TabIndex = 2;
+            this.txtBase_sl.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBase_sl.DefaultText = "";
+            this.txtBase_sl.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtBase_sl.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtBase_sl.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBase_sl.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBase_sl.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBase_sl.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtBase_sl.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBase_sl.Location = new System.Drawing.Point(137, 209);
+            this.txtBase_sl.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtBase_sl.Name = "txtBase_sl";
+            this.txtBase_sl.PlaceholderText = "";
+            this.txtBase_sl.SelectedText = "";
+            this.txtBase_sl.Size = new System.Drawing.Size(266, 30);
+            this.txtBase_sl.TabIndex = 2;
             // 
             // txtID
             // 
@@ -177,7 +198,7 @@
             this.txtID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtID.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtID.Location = new System.Drawing.Point(122, 31);
+            this.txtID.Location = new System.Drawing.Point(135, 31);
             this.txtID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtID.Name = "txtID";
             this.txtID.PlaceholderText = "";
@@ -185,24 +206,25 @@
             this.txtID.Size = new System.Drawing.Size(168, 37);
             this.txtID.TabIndex = 2;
             // 
-            // guna2TextBox6
+            // txtEmp_id
             // 
-            this.guna2TextBox6.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox6.DefaultText = "";
-            this.guna2TextBox6.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox6.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox6.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox6.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox6.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox6.Location = new System.Drawing.Point(124, 81);
-            this.guna2TextBox6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2TextBox6.Name = "guna2TextBox6";
-            this.guna2TextBox6.PlaceholderText = "";
-            this.guna2TextBox6.SelectedText = "";
-            this.guna2TextBox6.Size = new System.Drawing.Size(266, 30);
-            this.guna2TextBox6.TabIndex = 3;
+            this.txtEmp_id.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtEmp_id.DefaultText = "";
+            this.txtEmp_id.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtEmp_id.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtEmp_id.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtEmp_id.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtEmp_id.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtEmp_id.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtEmp_id.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtEmp_id.Location = new System.Drawing.Point(137, 95);
+            this.txtEmp_id.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtEmp_id.Name = "txtEmp_id";
+            this.txtEmp_id.PlaceholderText = "";
+            this.txtEmp_id.SelectedText = "";
+            this.txtEmp_id.Size = new System.Drawing.Size(266, 30);
+            this.txtEmp_id.TabIndex = 3;
+            this.txtEmp_id.Validated += new System.EventHandler(this.txtEmp_id_Validated);
             // 
             // bunifuLabel2
             // 
@@ -210,7 +232,7 @@
             this.bunifuLabel2.AutoEllipsis = false;
             this.bunifuLabel2.CursorType = null;
             this.bunifuLabel2.Font = new System.Drawing.Font("Segoe UI", 11.78182F);
-            this.bunifuLabel2.Location = new System.Drawing.Point(34, 261);
+            this.bunifuLabel2.Location = new System.Drawing.Point(55, 267);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel2.Size = new System.Drawing.Size(66, 25);
@@ -219,62 +241,24 @@
             this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // guna2TextBox4
+            // txtDesd
             // 
-            this.guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox4.DefaultText = "";
-            this.guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.Location = new System.Drawing.Point(124, 459);
-            this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2TextBox4.Name = "guna2TextBox4";
-            this.guna2TextBox4.PlaceholderText = "";
-            this.guna2TextBox4.SelectedText = "";
-            this.guna2TextBox4.Size = new System.Drawing.Size(266, 30);
-            this.guna2TextBox4.TabIndex = 4;
-            // 
-            // guna2TextBox2
-            // 
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Location = new System.Drawing.Point(124, 400);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PlaceholderText = "";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.Size = new System.Drawing.Size(266, 30);
-            this.guna2TextBox2.TabIndex = 4;
-            // 
-            // guna2TextBox1
-            // 
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(124, 332);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(266, 30);
-            this.guna2TextBox1.TabIndex = 4;
+            this.txtDesd.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDesd.DefaultText = "";
+            this.txtDesd.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtDesd.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtDesd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtDesd.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtDesd.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtDesd.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtDesd.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtDesd.Location = new System.Drawing.Point(137, 323);
+            this.txtDesd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtDesd.Name = "txtDesd";
+            this.txtDesd.PlaceholderText = "";
+            this.txtDesd.SelectedText = "";
+            this.txtDesd.Size = new System.Drawing.Size(266, 30);
+            this.txtDesd.TabIndex = 4;
             // 
             // bunifuLabel8
             // 
@@ -282,7 +266,7 @@
             this.bunifuLabel8.AutoEllipsis = false;
             this.bunifuLabel8.CursorType = null;
             this.bunifuLabel8.Font = new System.Drawing.Font("Segoe UI", 11.78182F);
-            this.bunifuLabel8.Location = new System.Drawing.Point(6, 88);
+            this.bunifuLabel8.Location = new System.Drawing.Point(12, 100);
             this.bunifuLabel8.Name = "bunifuLabel8";
             this.bunifuLabel8.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel8.Size = new System.Drawing.Size(109, 25);
@@ -297,12 +281,12 @@
             this.bunifuLabel5.AutoEllipsis = false;
             this.bunifuLabel5.CursorType = null;
             this.bunifuLabel5.Font = new System.Drawing.Font("Segoe UI", 11.12727F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel5.Location = new System.Drawing.Point(44, 463);
+            this.bunifuLabel5.Location = new System.Drawing.Point(76, 449);
             this.bunifuLabel5.Name = "bunifuLabel5";
             this.bunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel5.Size = new System.Drawing.Size(47, 23);
+            this.bunifuLabel5.Size = new System.Drawing.Size(45, 23);
             this.bunifuLabel5.TabIndex = 7;
-            this.bunifuLabel5.Text = "Status";
+            this.bunifuLabel5.Text = "Notes";
             this.bunifuLabel5.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel5.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -312,12 +296,12 @@
             this.bunifuLabel4.AutoEllipsis = false;
             this.bunifuLabel4.CursorType = null;
             this.bunifuLabel4.Font = new System.Drawing.Font("Segoe UI", 11.12727F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel4.Location = new System.Drawing.Point(44, 404);
+            this.bunifuLabel4.Location = new System.Drawing.Point(11, 379);
             this.bunifuLabel4.Name = "bunifuLabel4";
             this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel4.Size = new System.Drawing.Size(47, 23);
+            this.bunifuLabel4.Size = new System.Drawing.Size(110, 23);
             this.bunifuLabel4.TabIndex = 7;
-            this.bunifuLabel4.Text = "Status";
+            this.bunifuLabel4.Text = "Payment_Date";
             this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel4.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -327,33 +311,33 @@
             this.bunifuLabel1.AutoEllipsis = false;
             this.bunifuLabel1.CursorType = null;
             this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI", 11.12727F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel1.Location = new System.Drawing.Point(44, 336);
+            this.bunifuLabel1.Location = new System.Drawing.Point(28, 324);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(47, 23);
+            this.bunifuLabel1.Size = new System.Drawing.Size(93, 23);
             this.bunifuLabel1.TabIndex = 7;
-            this.bunifuLabel1.Text = "Status";
+            this.bunifuLabel1.Text = "Desductions";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // guna2TextBox7
+            // txtBonuses
             // 
-            this.guna2TextBox7.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox7.DefaultText = "";
-            this.guna2TextBox7.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox7.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox7.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox7.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox7.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox7.Location = new System.Drawing.Point(124, 258);
-            this.guna2TextBox7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2TextBox7.Name = "guna2TextBox7";
-            this.guna2TextBox7.PlaceholderText = "";
-            this.guna2TextBox7.SelectedText = "";
-            this.guna2TextBox7.Size = new System.Drawing.Size(266, 30);
-            this.guna2TextBox7.TabIndex = 4;
+            this.txtBonuses.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBonuses.DefaultText = "";
+            this.txtBonuses.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtBonuses.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtBonuses.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBonuses.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBonuses.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBonuses.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtBonuses.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBonuses.Location = new System.Drawing.Point(137, 266);
+            this.txtBonuses.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtBonuses.Name = "txtBonuses";
+            this.txtBonuses.PlaceholderText = "";
+            this.txtBonuses.SelectedText = "";
+            this.txtBonuses.Size = new System.Drawing.Size(266, 30);
+            this.txtBonuses.TabIndex = 4;
             // 
             // bunifuLabel7
             // 
@@ -361,7 +345,7 @@
             this.bunifuLabel7.AutoEllipsis = false;
             this.bunifuLabel7.CursorType = null;
             this.bunifuLabel7.Font = new System.Drawing.Font("Segoe UI", 11.12727F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel7.Location = new System.Drawing.Point(15, 135);
+            this.bunifuLabel7.Location = new System.Drawing.Point(18, 157);
             this.bunifuLabel7.Name = "bunifuLabel7";
             this.bunifuLabel7.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel7.Size = new System.Drawing.Size(103, 23);
@@ -380,6 +364,7 @@
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(42, 38);
             this.guna2ControlBox1.TabIndex = 26;
+            this.guna2ControlBox1.Click += new System.EventHandler(this.guna2ControlBox1_Click);
             // 
             // guna2GradientTileButton3
             // 
@@ -400,6 +385,7 @@
             this.guna2GradientTileButton3.Size = new System.Drawing.Size(408, 54);
             this.guna2GradientTileButton3.TabIndex = 12;
             this.guna2GradientTileButton3.Text = "Delete";
+            this.guna2GradientTileButton3.Click += new System.EventHandler(this.guna2GradientTileButton3_Click);
             // 
             // guna2GradientTileButton2
             // 
@@ -420,6 +406,7 @@
             this.guna2GradientTileButton2.Size = new System.Drawing.Size(408, 54);
             this.guna2GradientTileButton2.TabIndex = 13;
             this.guna2GradientTileButton2.Text = "Update";
+            this.guna2GradientTileButton2.Click += new System.EventHandler(this.guna2GradientTileButton2_Click);
             // 
             // guna2GradientTileButton1
             // 
@@ -440,6 +427,7 @@
             this.guna2GradientTileButton1.Size = new System.Drawing.Size(408, 54);
             this.guna2GradientTileButton1.TabIndex = 14;
             this.guna2GradientTileButton1.Text = "Save";
+            this.guna2GradientTileButton1.Click += new System.EventHandler(this.guna2GradientTileButton1_Click);
             // 
             // panel1
             // 
@@ -455,6 +443,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(442, 760);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
@@ -478,24 +467,24 @@
         private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel3;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel9;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
+        private Guna.UI2.WinForms.Guna2TextBox txtBase_sl;
         private Guna.UI2.WinForms.Guna2TextBox txtID;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox6;
+        private Guna.UI2.WinForms.Guna2TextBox txtEmp_id;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox txtDesd;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel8;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox7;
+        private Guna.UI2.WinForms.Guna2TextBox txtBonuses;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel7;
         private Guna.UI2.WinForms.Guna2GradientTileButton guna2GradientTileButton3;
         private Guna.UI2.WinForms.Guna2GradientTileButton guna2GradientTileButton2;
         private Guna.UI2.WinForms.Guna2GradientTileButton guna2GradientTileButton1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel4;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel5;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2GradientTileButton guna2GradientTileButton4;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.RichTextBox txtnote;
+        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker2;
     }
 }

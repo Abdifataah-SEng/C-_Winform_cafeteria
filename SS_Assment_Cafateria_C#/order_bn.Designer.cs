@@ -32,7 +32,6 @@
             this.txtorder_id = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtemployee_id = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtitem_name = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtcategory = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtitem_price = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtquantity = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtunitprice = new Guna.UI2.WinForms.Guna2TextBox();
@@ -51,15 +50,16 @@
             this.bunifuLabel10 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel11 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuGroupBox1 = new Bunifu.UI.WinForms.BunifuGroupBox();
+            this.guna2GradientTileButton4 = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.btorder_date = new Bunifu.UI.WinForms.BunifuDatePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cbox_category = new System.Windows.Forms.ComboBox();
             this.bunifuGroupBox2 = new Bunifu.UI.WinForms.BunifuGroupBox();
             this.guna2GradientTileButton1 = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.guna2GradientTileButton2 = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.guna2GradientTileButton3 = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.guna2GradientTileButton4 = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.bunifuGroupBox1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.bunifuGroupBox2.SuspendLayout();
@@ -81,7 +81,6 @@
             this.txtorder_id.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtorder_id.Name = "txtorder_id";
             this.txtorder_id.PlaceholderText = "";
-            this.txtorder_id.ReadOnly = true;
             this.txtorder_id.SelectedText = "";
             this.txtorder_id.Size = new System.Drawing.Size(193, 33);
             this.txtorder_id.TabIndex = 0;
@@ -106,6 +105,7 @@
             this.txtemployee_id.SelectedText = "";
             this.txtemployee_id.Size = new System.Drawing.Size(304, 33);
             this.txtemployee_id.TabIndex = 0;
+            this.txtemployee_id.TextChanged += new System.EventHandler(this.txtemployee_id_TextChanged);
             this.txtemployee_id.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtemployee_id_KeyPress);
             // 
             // txtitem_name
@@ -128,25 +128,6 @@
             this.txtitem_name.TabIndex = 0;
             this.txtitem_name.TextChanged += new System.EventHandler(this.guna2TextBox5_TextChanged);
             this.txtitem_name.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtitem_name_KeyDown);
-            // 
-            // txtcategory
-            // 
-            this.txtcategory.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtcategory.DefaultText = "";
-            this.txtcategory.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtcategory.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtcategory.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtcategory.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtcategory.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtcategory.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtcategory.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtcategory.Location = new System.Drawing.Point(23, 127);
-            this.txtcategory.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtcategory.Name = "txtcategory";
-            this.txtcategory.PlaceholderText = "";
-            this.txtcategory.SelectedText = "";
-            this.txtcategory.Size = new System.Drawing.Size(304, 33);
-            this.txtcategory.TabIndex = 0;
             // 
             // txtitem_price
             // 
@@ -439,12 +420,33 @@
             this.bunifuGroupBox1.LabelAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bunifuGroupBox1.LabelIndent = 10;
             this.bunifuGroupBox1.LineStyle = Bunifu.UI.WinForms.BunifuGroupBox.LineStyles.Solid;
-            this.bunifuGroupBox1.Location = new System.Drawing.Point(8, 43);
+            this.bunifuGroupBox1.Location = new System.Drawing.Point(8, 47);
             this.bunifuGroupBox1.Name = "bunifuGroupBox1";
             this.bunifuGroupBox1.Size = new System.Drawing.Size(360, 396);
             this.bunifuGroupBox1.TabIndex = 4;
             this.bunifuGroupBox1.TabStop = false;
             this.bunifuGroupBox1.Text = "Add";
+            // 
+            // guna2GradientTileButton4
+            // 
+            this.guna2GradientTileButton4.Animated = true;
+            this.guna2GradientTileButton4.AutoRoundedCorners = true;
+            this.guna2GradientTileButton4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientTileButton4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientTileButton4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientTileButton4.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientTileButton4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2GradientTileButton4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.guna2GradientTileButton4.FillColor2 = System.Drawing.Color.Olive;
+            this.guna2GradientTileButton4.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2GradientTileButton4.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientTileButton4.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.guna2GradientTileButton4.Location = new System.Drawing.Point(241, 58);
+            this.guna2GradientTileButton4.Name = "guna2GradientTileButton4";
+            this.guna2GradientTileButton4.Size = new System.Drawing.Size(94, 37);
+            this.guna2GradientTileButton4.TabIndex = 10;
+            this.guna2GradientTileButton4.Text = "Search";
+            this.guna2GradientTileButton4.Click += new System.EventHandler(this.guna2GradientTileButton4_Click);
             // 
             // btorder_date
             // 
@@ -473,9 +475,9 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.cbox_category);
             this.groupBox1.Controls.Add(this.bunifuLabel9);
             this.groupBox1.Controls.Add(this.txtitem_name);
-            this.groupBox1.Controls.Add(this.txtcategory);
             this.groupBox1.Controls.Add(this.bunifuLabel8);
             this.groupBox1.Controls.Add(this.txtitem_price);
             this.groupBox1.Controls.Add(this.bunifuLabel7);
@@ -486,6 +488,17 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Menu_Item";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // cbox_category
+            // 
+            this.cbox_category.FormattingEnabled = true;
+            this.cbox_category.Items.AddRange(new object[] {
+            "Drink",
+            "Food"});
+            this.cbox_category.Location = new System.Drawing.Point(30, 130);
+            this.cbox_category.Name = "cbox_category";
+            this.cbox_category.Size = new System.Drawing.Size(296, 21);
+            this.cbox_category.TabIndex = 2;
             // 
             // bunifuGroupBox2
             // 
@@ -525,7 +538,7 @@
             this.guna2GradientTileButton1.Font = new System.Drawing.Font("Segoe UI", 15.70909F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GradientTileButton1.ForeColor = System.Drawing.Color.White;
             this.guna2GradientTileButton1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.guna2GradientTileButton1.Location = new System.Drawing.Point(8, 448);
+            this.guna2GradientTileButton1.Location = new System.Drawing.Point(8, 451);
             this.guna2GradientTileButton1.Name = "guna2GradientTileButton1";
             this.guna2GradientTileButton1.Size = new System.Drawing.Size(360, 67);
             this.guna2GradientTileButton1.TabIndex = 7;
@@ -546,7 +559,7 @@
             this.guna2GradientTileButton2.Font = new System.Drawing.Font("Segoe UI", 15.70909F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GradientTileButton2.ForeColor = System.Drawing.Color.White;
             this.guna2GradientTileButton2.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.guna2GradientTileButton2.Location = new System.Drawing.Point(8, 524);
+            this.guna2GradientTileButton2.Location = new System.Drawing.Point(8, 525);
             this.guna2GradientTileButton2.Name = "guna2GradientTileButton2";
             this.guna2GradientTileButton2.Size = new System.Drawing.Size(360, 67);
             this.guna2GradientTileButton2.TabIndex = 7;
@@ -567,7 +580,7 @@
             this.guna2GradientTileButton3.Font = new System.Drawing.Font("Segoe UI", 15.70909F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GradientTileButton3.ForeColor = System.Drawing.Color.White;
             this.guna2GradientTileButton3.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.guna2GradientTileButton3.Location = new System.Drawing.Point(8, 600);
+            this.guna2GradientTileButton3.Location = new System.Drawing.Point(8, 599);
             this.guna2GradientTileButton3.Name = "guna2GradientTileButton3";
             this.guna2GradientTileButton3.Size = new System.Drawing.Size(360, 67);
             this.guna2GradientTileButton3.TabIndex = 7;
@@ -580,7 +593,7 @@
             this.guna2ControlBox1.FillColor = System.Drawing.Color.Maroon;
             this.guna2ControlBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.70909F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(733, 3);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(709, 3);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(42, 38);
             this.guna2ControlBox1.TabIndex = 25;
@@ -593,35 +606,14 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(778, 45);
+            this.panel1.Size = new System.Drawing.Size(754, 45);
             this.panel1.TabIndex = 26;
-            // 
-            // guna2GradientTileButton4
-            // 
-            this.guna2GradientTileButton4.Animated = true;
-            this.guna2GradientTileButton4.AutoRoundedCorners = true;
-            this.guna2GradientTileButton4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientTileButton4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientTileButton4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientTileButton4.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientTileButton4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientTileButton4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.guna2GradientTileButton4.FillColor2 = System.Drawing.Color.Olive;
-            this.guna2GradientTileButton4.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientTileButton4.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientTileButton4.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.guna2GradientTileButton4.Location = new System.Drawing.Point(241, 58);
-            this.guna2GradientTileButton4.Name = "guna2GradientTileButton4";
-            this.guna2GradientTileButton4.Size = new System.Drawing.Size(94, 37);
-            this.guna2GradientTileButton4.TabIndex = 10;
-            this.guna2GradientTileButton4.Text = "Search";
-            this.guna2GradientTileButton4.Click += new System.EventHandler(this.guna2GradientTileButton4_Click);
             // 
             // order_bn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(778, 681);
+            this.ClientSize = new System.Drawing.Size(754, 681);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.guna2GradientTileButton3);
             this.Controls.Add(this.guna2GradientTileButton2);
@@ -649,7 +641,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txtorder_id;
         private Guna.UI2.WinForms.Guna2TextBox txtemployee_id;
         private Guna.UI2.WinForms.Guna2TextBox txtitem_name;
-        private Guna.UI2.WinForms.Guna2TextBox txtcategory;
         private Guna.UI2.WinForms.Guna2TextBox txtitem_price;
         private Guna.UI2.WinForms.Guna2TextBox txtquantity;
         private Guna.UI2.WinForms.Guna2TextBox txtunitprice;
@@ -677,5 +668,6 @@
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private System.Windows.Forms.Panel panel1;
         private Guna.UI2.WinForms.Guna2GradientTileButton guna2GradientTileButton4;
+        private System.Windows.Forms.ComboBox cbox_category;
     }
 }

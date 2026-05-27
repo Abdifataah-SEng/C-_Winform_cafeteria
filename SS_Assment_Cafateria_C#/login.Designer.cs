@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.UseSystemPasswordChar = new System.Windows.Forms.CheckBox();
+            this.cboxshow = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.txtname = new Guna.UI2.WinForms.Guna2TextBox();
@@ -45,18 +45,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // UseSystemPasswordChar
+            // cboxshow
             // 
-            this.UseSystemPasswordChar.AutoSize = true;
-            this.UseSystemPasswordChar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.18462F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UseSystemPasswordChar.ForeColor = System.Drawing.Color.White;
-            this.UseSystemPasswordChar.Location = new System.Drawing.Point(428, 369);
-            this.UseSystemPasswordChar.Name = "UseSystemPasswordChar";
-            this.UseSystemPasswordChar.Size = new System.Drawing.Size(77, 28);
-            this.UseSystemPasswordChar.TabIndex = 21;
-            this.UseSystemPasswordChar.Text = "Show";
-            this.UseSystemPasswordChar.UseVisualStyleBackColor = true;
-            this.UseSystemPasswordChar.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.cboxshow.AutoSize = true;
+            this.cboxshow.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.18462F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboxshow.ForeColor = System.Drawing.Color.White;
+            this.cboxshow.Location = new System.Drawing.Point(428, 369);
+            this.cboxshow.Name = "cboxshow";
+            this.cboxshow.Size = new System.Drawing.Size(77, 28);
+            this.cboxshow.TabIndex = 21;
+            this.cboxshow.TabStop = false;
+            this.cboxshow.Text = "Show";
+            this.cboxshow.UseVisualStyleBackColor = true;
+            this.cboxshow.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // label3
             // 
@@ -193,7 +194,7 @@
             this.txtpass.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtpass.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtpass.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtpass.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtpass.Font = new System.Drawing.Font("Times New Roman", 13.74545F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtpass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtpass.Location = new System.Drawing.Point(432, 297);
             this.txtpass.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -202,6 +203,7 @@
             this.txtpass.SelectedText = "";
             this.txtpass.Size = new System.Drawing.Size(276, 51);
             this.txtpass.TabIndex = 25;
+            this.txtpass.TextChanged += new System.EventHandler(this.txtpass_TextChanged);
             // 
             // login
             // 
@@ -213,7 +215,7 @@
             this.Controls.Add(this.guna2ControlBox1);
             this.Controls.Add(this.guna2GradientTileButton1);
             this.Controls.Add(this.txtname);
-            this.Controls.Add(this.UseSystemPasswordChar);
+            this.Controls.Add(this.cboxshow);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox4);
@@ -236,7 +238,7 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.CheckBox UseSystemPasswordChar;
+        private System.Windows.Forms.CheckBox cboxshow;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox4;

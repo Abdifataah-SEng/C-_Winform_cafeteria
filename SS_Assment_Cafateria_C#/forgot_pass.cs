@@ -112,5 +112,10 @@ namespace SS_Assment_Cafateria_C_
                 MessageBox.Show("Password does not match.");
             }
         }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
